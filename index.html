@@ -138,44 +138,34 @@
     
         
         
-            <article class="kratos-hentry clearfix">
-                <div class="kratos-entry-border-new clearfix">
-                    
+            <article>
+                <div class="kratos-hentry kratos-post-inner clearfix index-post">
                     <div class="kratos-entry-thumb-new">
                         <a href="/smartcar-k/">
                             
-                                <img class="kratos-entry-thumb-new-img">
-                            
                         </a>
                     </div>
-                    <div class="kratos-post-inner-new">
-                        <header class="kratos-entry-header-new">
-                                <a class="label-link" href="/categories/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a>
-                            <h2 class="kratos-entry-title-new"><a href="/smartcar-k/">单车冲冲冲</a>
-                        </header>
-                        <div class="kratos-entry-content-new">
-                            <p>
-                                
-                                    
-今天就拿GitHub的另一个项目水一篇博客。🤪本人参与硬件部分，不过也是新手。把自己的硬件部分开源，希望和大家一起交流进步。好多资料网络上都可以查得到的，可以认为这里做的是硬件方案的分享。
-
-2021智能车单车组硬件开源本篇博客记...
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <footer class="kratos-post-meta-new">
-                        <span class="pull-left">
-                            <a>
+                    <header class="kratos-entry-header">
+                        <h1 class="text-center"><a class="kratos-entry-title" href="/smartcar-k/">单车冲冲冲</a></h1>
+                        
+                        <ul class="kratos-post-meta text-center">
+                            <li>
                                 <i class="fa fa-calendar"></i>
                                 2021-05-18
-                            </a>
-                            <a>
-                                
+                            </li>
+                            
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    分类于
+                                    <a class="label-link" href="/categories/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a>
+                                </li>
+                            
+                            
+                                <li>
                                     <i class="fa fa-tags"></i>
                                     <a class="tag-none-link" href="/tags/%E5%88%86%E4%BA%AB/" rel="tag">分享</a>, <a class="tag-none-link" href="/tags/%E5%BC%80%E6%BA%90/" rel="tag">开源</a>
-                                
-                            </a>
+                                </li>
+                            
                             
                                 <!-- 当前仅支持valine/waline自带的统计功能 -->
                                 
@@ -184,10 +174,38 @@
                                 <!-- 当前仅支持waline自带的统计功能 -->
                                 
                             
-                        </span>
-                        <span class="pull-right">
-                            <a class="read-more" href="/smartcar-k/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                        </span>
+                        </ul>
+                    </header>
+                    <hr />
+                    <div class="kratos-post-content">
+                        <blockquote>
+<p>今天就拿GitHub的另一个项目水一篇博客。🤪<br>本人参与硬件部分，不过也是新手。把自己的硬件部分开源，希望和大家一起交流进步。<br>好多资料网络上都可以查得到的，可以认为这里做的是硬件方案的分享。</p>
+</blockquote>
+<h2 id="2021智能车单车组硬件开源"><a href="#2021智能车单车组硬件开源" class="headerlink" title="2021智能车单车组硬件开源"></a>2021智能车单车组硬件开源</h2><p><em>本篇博客记录截至<code>2021.5.18</code>，最新更新请前往<a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K">GitHub项目地址</a>。</em></p>
+<ul>
+<li><a href="#%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95">更新记录</a><ul>
+<li><a href="#2021-3-20">2021-3-20</a></li>
+<li><a href="#2021-3-22">2021-3-22</a></li>
+<li><a href="#2021-4-7">2021-4-7</a></li>
+<li><a href="#2021-5-17">2021-5-17</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h3><h4 id="2021-3-20"><a href="#2021-3-20" class="headerlink" title="2021-3-20"></a>2021-3-20</h4><p>先上传前期的一套方案的原理图，目前遇到的问题是主板模块下载程序成功率较低。<br>可能是MCU供电和USB转TTL电压因为分开供电，电压不稳造成的。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MCU.~(118).SchDoc">MCU.~(118).SchDoc</a><br><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MOTOR%20V1.1.SchDoc">MOTOR V1.1.SchDoc</a><br><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/OPA4377%E5%9B%9B%E8%B7%AF%20V2.0.SchDoc">OPA4377四路 V2.0.SchDoc</a></p>
+<h4 id="2021-3-22"><a href="#2021-3-22" class="headerlink" title="2021-3-22"></a>2021-3-22</h4><p>究极一体板方案！（bushi）这是最近尝试的一体板方案，包括全桥驱动芯片和四电感运放部分，希望不要出问题。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MCU%20V3.1.SchDoc">MCU V3.1.SchDoc</a></p>
+<h4 id="2021-4-7"><a href="#2021-4-7" class="headerlink" title="2021-4-7"></a>2021-4-7</h4><p>MCU V3.1的驱动部分，8V稳压好像只能到7.1V。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MCU%20V3.1.SchDoc">MCU V3.1.SchDoc</a></p>
+<h4 id="2021-5-17"><a href="#2021-5-17" class="headerlink" title="2021-5-17"></a>2021-5-17</h4><p>把主板上稳压去掉了，用的之前的驱动板驱动，几个月了，稳的一批。<br>不过我现在的2350运放又出问题了，之前还能用，现在咋用不了了，气！<br><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MCU%20V3.1.SchDoc">MCU V3.1.SchDoc</a></p>
+<p><img src="https://raw.githubusercontent.com/gone1724/Smartcar_K/main/My%20Car%E2%80%98s%20Photos/IMG_20210408_161804.jpg" alt="My Car‘s Photos" title="没加电磁的K车,冲冲冲"></p>
+
+                    </div>
+                    <footer class="kratos-entry-footer clearfix">
+                        <div class="post-like-donate text-center clearfix">
+                            <a class="read-more" href="/smartcar-k/#more" title="单车冲冲冲">继续阅读 <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
                     </footer>
                 </div>
             </article>
@@ -195,44 +213,34 @@
     
         
         
-            <article class="kratos-hentry clearfix">
-                <div class="kratos-entry-border-new clearfix">
-                    
+            <article>
+                <div class="kratos-hentry kratos-post-inner clearfix index-post">
                     <div class="kratos-entry-thumb-new">
                         <a href="/occur-to-me/">
                             
-                                <img class="kratos-entry-thumb-new-img">
-                            
                         </a>
                     </div>
-                    <div class="kratos-post-inner-new">
-                        <header class="kratos-entry-header-new">
-                                <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
-                            <h2 class="kratos-entry-title-new"><a href="/occur-to-me/">忽然想到</a>
-                        </header>
-                        <div class="kratos-entry-content-new">
-                            <p>
-                                
-                                    
-晚上自习完，在路上忽然想到的，再不来记一下就忘了。
-
-17年暑假，曾经搭建过的第一个博客网站： waguansi.xyz。那时是用 wordpress搭建，主机商的虚拟主机支持一键安装博客系统，所以不用特别折腾。之前和现在一样，也是...
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <footer class="kratos-post-meta-new">
-                        <span class="pull-left">
-                            <a>
+                    <header class="kratos-entry-header">
+                        <h1 class="text-center"><a class="kratos-entry-title" href="/occur-to-me/">忽然想到</a></h1>
+                        
+                        <ul class="kratos-post-meta text-center">
+                            <li>
                                 <i class="fa fa-calendar"></i>
                                 2021-05-17
-                            </a>
-                            <a>
-                                
+                            </li>
+                            
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    分类于
+                                    <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
+                                </li>
+                            
+                            
+                                <li>
                                     <i class="fa fa-tags"></i>
                                     <a class="tag-none-link" href="/tags/%E5%9B%9E%E5%BF%86/" rel="tag">回忆</a>, <a class="tag-none-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>, <a class="tag-none-link" href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag">随笔</a>
-                                
-                            </a>
+                                </li>
+                            
                             
                                 <!-- 当前仅支持valine/waline自带的统计功能 -->
                                 
@@ -241,10 +249,23 @@
                                 <!-- 当前仅支持waline自带的统计功能 -->
                                 
                             
-                        </span>
-                        <span class="pull-right">
-                            <a class="read-more" href="/occur-to-me/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                        </span>
+                        </ul>
+                    </header>
+                    <hr />
+                    <div class="kratos-post-content">
+                        <blockquote>
+<p>晚上自习完，在路上忽然想到的，再不来记一下就忘了。</p>
+</blockquote>
+<p>17年暑假，曾经搭建过的第一个博客网站： <strong>waguansi.xyz</strong>。那时是用 <strong>wordpress</strong>搭建，主机商的虚拟主机支持一键安装博客系统，所以不用特别折腾。之前和现在一样，也是用的namesilo买域名加dnspod解析。大概，写了一年，到后期就鸽了，一年后主机到期就没再续了。</p>
+<p>幸运的是，当时把博客内容一片一片复制保存下来了。之后的一段时间，虽然网站没了，保留下来的那个文本还是被我当成日记在接着写。啥时候迁移一部分过来，这样我的博客时间就能增加了~</p>
+<p>是啊，还好，现在捡起来了。</p>
+<p><img src="https://i.loli.net/2021/05/17/k1zt9IsrbyXxZfB.png" alt="邮件截图 .png"></p>
+
+                    </div>
+                    <footer class="kratos-entry-footer clearfix">
+                        <div class="post-like-donate text-center clearfix">
+                            <a class="read-more" href="/occur-to-me/#more" title="忽然想到">继续阅读 <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
                     </footer>
                 </div>
             </article>
@@ -252,45 +273,34 @@
     
         
         
-            <article class="kratos-hentry clearfix">
-                <div class="kratos-entry-border-new clearfix">
-                    
+            <article>
+                <div class="kratos-hentry kratos-post-inner clearfix index-post">
                     <div class="kratos-entry-thumb-new">
                         <a href="/my-domain/">
                             
-                                <img class="kratos-entry-thumb-new-img">
-                            
                         </a>
                     </div>
-                    <div class="kratos-post-inner-new">
-                        <header class="kratos-entry-header-new">
-                                <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
-                            <h2 class="kratos-entry-title-new"><a href="/my-domain/">我的域名</a>
-                        </header>
-                        <div class="kratos-entry-content-new">
-                            <p>
-                                
-                                    
-huanz.top | 一次尝试：基于Github Pages和Hexo尝试搭建的博客网站。
-
-购买了一年的域名：huanz.top，选了好久，最终决定用付费的，省心。
-.top域名首年费用0.99刀，namesilo支持微信支付，...
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <footer class="kratos-post-meta-new">
-                        <span class="pull-left">
-                            <a>
+                    <header class="kratos-entry-header">
+                        <h1 class="text-center"><a class="kratos-entry-title" href="/my-domain/">我的域名</a></h1>
+                        
+                        <ul class="kratos-post-meta text-center">
+                            <li>
                                 <i class="fa fa-calendar"></i>
                                 2021-05-16
-                            </a>
-                            <a>
-                                
+                            </li>
+                            
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    分类于
+                                    <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
+                                </li>
+                            
+                            
+                                <li>
                                     <i class="fa fa-tags"></i>
                                     <a class="tag-none-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>
-                                
-                            </a>
+                                </li>
+                            
                             
                                 <!-- 当前仅支持valine/waline自带的统计功能 -->
                                 
@@ -299,10 +309,24 @@ huanz.top | 一次尝试：基于Github Pages和Hexo尝试搭建的博客网站�
                                 <!-- 当前仅支持waline自带的统计功能 -->
                                 
                             
-                        </span>
-                        <span class="pull-right">
-                            <a class="read-more" href="/my-domain/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                        </span>
+                        </ul>
+                    </header>
+                    <hr />
+                    <div class="kratos-post-content">
+                        <blockquote>
+<p><a href="https://huanz.top/">huanz.top</a> | 一次尝试：基于Github Pages和Hexo尝试搭建的博客网站。</p>
+</blockquote>
+<p>购买了一年的域名：<a href="https://huanz.top/">huanz.top</a>，选了好久，最终决定用付费的，省心。</p>
+<p><strong>.top</strong>域名首年费用0.99刀，<a target="_blank" rel="noopener" href="https://www.namesilo.com/">namesilo</a>支持微信支付，最后结算时支付了人民币6.37元。</p>
+<p>域名是使用腾讯系的<a href="dnspod.cn">DNSPod</a>解析<a target="_blank" rel="noopener" href="https://github.com/gone1724/gone1724.github.io" title="项目地址">gone1724.github.io</a>，DNSPod好久没登陆了，没想到它还在解析着以前申请过的一个 <strong>.tk</strong> 域名。好执着~ </p>
+<p><del>这腾讯怎么就把我域名给拦截了？</del> 已经申诉成功。</p>
+<p><img src="https://i.loli.net/2021/05/17/NersmuMXafnjSPL.jpg" alt="微信截图.jpg"></p>
+
+                    </div>
+                    <footer class="kratos-entry-footer clearfix">
+                        <div class="post-like-donate text-center clearfix">
+                            <a class="read-more" href="/my-domain/#more" title="我的域名">继续阅读 <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
                     </footer>
                 </div>
             </article>
@@ -310,45 +334,34 @@ huanz.top | 一次尝试：基于Github Pages和Hexo尝试搭建的博客网站�
     
         
         
-            <article class="kratos-hentry clearfix">
-                <div class="kratos-entry-border-new clearfix">
-                    
+            <article>
+                <div class="kratos-hentry kratos-post-inner clearfix index-post">
                     <div class="kratos-entry-thumb-new">
                         <a href="/hello-world/">
                             
-                                <img class="kratos-entry-thumb-new-img">
-                            
                         </a>
                     </div>
-                    <div class="kratos-post-inner-new">
-                        <header class="kratos-entry-header-new">
-                                <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
-                            <h2 class="kratos-entry-title-new"><a href="/hello-world/">Hello World!</a>
-                        </header>
-                        <div class="kratos-entry-content-new">
-                            <p>
-                                
-                                    
-Hello World!
-
-这是我第一次尝试发布的文章。
-12345#include &lt;stdio.h&gt;void main()&#123;printf(&quot;Holle World&quot;);//代码测试&#1...
-                                
-                            </p>
-                        </div>
-                    </div>
-                    <footer class="kratos-post-meta-new">
-                        <span class="pull-left">
-                            <a>
+                    <header class="kratos-entry-header">
+                        <h1 class="text-center"><a class="kratos-entry-title" href="/hello-world/">Hello World!</a></h1>
+                        
+                        <ul class="kratos-post-meta text-center">
+                            <li>
                                 <i class="fa fa-calendar"></i>
                                 2021-05-15
-                            </a>
-                            <a>
-                                
+                            </li>
+                            
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    分类于
+                                    <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
+                                </li>
+                            
+                            
+                                <li>
                                     <i class="fa fa-tags"></i>
                                     <a class="tag-none-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>
-                                
-                            </a>
+                                </li>
+                            
                             
                                 <!-- 当前仅支持valine/waline自带的统计功能 -->
                                 
@@ -357,10 +370,23 @@ Hello World!
                                 <!-- 当前仅支持waline自带的统计功能 -->
                                 
                             
-                        </span>
-                        <span class="pull-right">
-                            <a class="read-more" href="/hello-world/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                        </span>
+                        </ul>
+                    </header>
+                    <hr />
+                    <div class="kratos-post-content">
+                        <blockquote>
+<p>Hello World!</p>
+</blockquote>
+<p><strong>这是我第一次尝试发布的文章。</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Holle World&quot;</span>);<span class="comment">//代码测试</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://i.loli.net/2021/05/15/NvC4YorSKdqjnpW.png" alt="logo.png" title="图片测试"></p>
+
+                    </div>
+                    <footer class="kratos-entry-footer clearfix">
+                        <div class="post-like-donate text-center clearfix">
+                            <a class="read-more" href="/hello-world/#more" title="Hello World!">继续阅读 <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
                     </footer>
                 </div>
             </article>
