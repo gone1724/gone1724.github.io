@@ -142,6 +142,91 @@
             <article>
                 <div class="kratos-hentry kratos-post-inner clearfix index-post">
                     <div class="kratos-entry-thumb-new">
+                        <a href="/cnzz/">
+                            
+                        </a>
+                    </div>
+                    <header class="kratos-entry-header">
+                        <h1 class="text-center"><a class="kratos-entry-title" href="/cnzz/">成功开启站长统计</a></h1>
+                        
+                        <ul class="kratos-post-meta text-center">
+                            <li>
+                                <i class="fa fa-calendar"></i>
+                                2021-05-20
+                            </li>
+                            
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    分类于
+                                    <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
+                                </li>
+                            
+                            
+                                <li>
+                                    <i class="fa fa-tags"></i>
+                                    <a class="tag-none-link" href="/tags/Hexo/" rel="tag">Hexo</a>, <a class="tag-none-link" href="/tags/%E5%88%86%E4%BA%AB/" rel="tag">分享</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>
+                                </li>
+                            
+                            
+                                <!-- 当前仅支持valine/waline自带的统计功能 -->
+                                
+                                    <li id="/cnzz/" class="leancloud_visitors" data-flag-title="成功开启站长统计">
+                                        <i class="fa fa-eye"></i>
+                                        <span class="leancloud-visitors-count"> </span> 次阅读
+                                    </li>
+                                
+                            
+                            
+                                <!-- 当前仅支持waline自带的统计功能 -->
+                                
+                                    <li>
+                                        <i class="fa fa-commenting-o"></i>
+                                        <span data-xid="/cnzz/" class="waline-comment-count"> </span> 条评论
+                                    </li>
+                                
+                            
+                        </ul>
+                    </header>
+                    <hr />
+                    <div class="kratos-post-content">
+                        <p>经过今天的折腾，本站已成功开启 <strong>站长统计</strong> 功能。</p>
+<p>服务依托于<a target="_blank" rel="noopener" href="https://www.umeng.com/">cnzz.com</a>，访问<a target="_blank" rel="noopener" href="https://new.cnzz.com/v1/login.php?siteid=1279942268">站长统计</a>即可查看站点统计数据。</p>
+<hr>
+<p>##如何添加cnzz.com站长统计代码到网页上？</p>
+<p>据cnzz网站介绍，将统计代码粘贴到您网站所有页面的<code>&lt;/body&gt;</code>前，添加成功后开始统计。</p>
+<p>同时cnzz网站说明，<em>加载CNZZ统计代码不会影响您网页的正常显示和加载速度。</em></p>
+<p>##如何将站长统计的文字/图片隐藏？</p>
+<p>在统计代码 javascript 中的 ducument.write(unescape(“%3Cspan 和 id=’cnzz_stat_icon’中间加上<code>style=&#39;display:none</code>即可。</p>
+<p>如本网站的代码如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;document.write(unescape(&quot;%3Cspan style=&#x27;display:none;&#x27; id=&#x27;cnzz_stat_icon_1279942268&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D1279942268&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;));&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>##本主题<a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">KRATOS:REBIRTH</a>是如何实现的？</p>
+<p>本博客使用<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>搭建，几乎无需触碰底层代码，当仍可通过修改主题文件对网站实现自定义。我当前使用的主题<a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">KRATOS:REBIRTH</a>默认支持在页尾添加统计代码。</p>
+<p>具体位置在<code>themes\Kratos-Rebirth\_config.yml</code>文件中<code># Global 全局配置</code>的<code>site_analytics:</code>。</p>
+<p>如果想要按照cnzz.com的要求，“网站所有页面的</body>前。”则需要打开<code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code>文件，在文本的最前面添加统计代码，再对博客进行部署。</p>
+<p>##我对主题文件做了什么？</p>
+<p>在<code>themes\Kratos-Rebirth\_config.yml</code>文件中<code># Global 全局配置</code>中添加一个自定义项如下。</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site<span class="emphasis">_analytics_</span>cnzz: 1279942268 #输入www.CNZZ.com的站长统计id号，默认在网页中隐藏</span><br></pre></td></tr></table></figure>
+
+<p>在<code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code>文件中，在文本最前添加如下代码,自定义项与前面对应。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.site_analytics_cnzz) &#123; %&gt;<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write(<span class="built_in">unescape</span>(<span class="string">&quot;%3Cspan style=&#x27;display:none;&#x27; id=&#x27;cnzz_stat_icon_&lt;%- theme.site_analytics_cnzz %&gt;&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D&lt;%- theme.site_analytics_cnzz %&gt;&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;</span>));</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<p>这样当我更换域名，只需在配置文件中统计代码id号即可。</p>
+
+                    </div>
+                    <footer class="kratos-entry-footer clearfix">
+                        <div class="post-like-donate text-center clearfix">
+                            <a class="read-more" href="/cnzz/#more" title="成功开启站长统计">继续阅读 <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
+                    </footer>
+                </div>
+            </article>
+        
+    
+        
+        
+            <article>
+                <div class="kratos-hentry kratos-post-inner clearfix index-post">
+                    <div class="kratos-entry-thumb-new">
                         <a href="/smartcar-k/">
                             
                         </a>
@@ -288,7 +373,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 0.6em;">分享</a> <a href="/tags/%E5%9B%9E%E5%BF%86/" style="font-size: 0.6em;">回忆</a> <a href="/tags/%E5%BC%80%E6%BA%90/" style="font-size: 0.6em;">开源</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 0.8em;">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 0.6em;">随笔</a>
+        <a href="/tags/Hexo/" style="font-size: 0.6em;">Hexo</a> <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 0.7em;">分享</a> <a href="/tags/%E5%9B%9E%E5%BF%86/" style="font-size: 0.6em;">回忆</a> <a href="/tags/%E5%BC%80%E6%BA%90/" style="font-size: 0.6em;">开源</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.6em;">教程</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 0.8em;">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 0.6em;">随笔</a>
       </div>
   </aside>
 
