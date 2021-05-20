@@ -142,6 +142,77 @@
             <article>
                 <div class="kratos-hentry kratos-post-inner clearfix index-post">
                     <div class="kratos-entry-thumb-new">
+                        <a href="/cnzz/">
+                            
+                        </a>
+                    </div>
+                    <header class="kratos-entry-header">
+                        <h1 class="text-center"><a class="kratos-entry-title" href="/cnzz/">成功开启站长统计</a></h1>
+                        
+                        <ul class="kratos-post-meta text-center">
+                            <li>
+                                <i class="fa fa-calendar"></i>
+                                2021-05-20
+                            </li>
+                            
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    分类于
+                                    <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
+                                </li>
+                            
+                            
+                                <li>
+                                    <i class="fa fa-tags"></i>
+                                    <a class="tag-none-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>
+                                </li>
+                            
+                            
+                                <!-- 当前仅支持valine/waline自带的统计功能 -->
+                                
+                                    <li id="/cnzz/" class="leancloud_visitors" data-flag-title="成功开启站长统计">
+                                        <i class="fa fa-eye"></i>
+                                        <span class="leancloud-visitors-count"> </span> 次阅读
+                                    </li>
+                                
+                            
+                            
+                                <!-- 当前仅支持waline自带的统计功能 -->
+                                
+                                    <li>
+                                        <i class="fa fa-commenting-o"></i>
+                                        <span data-xid="/cnzz/" class="waline-comment-count"> </span> 条评论
+                                    </li>
+                                
+                            
+                        </ul>
+                    </header>
+                    <hr />
+                    <div class="kratos-post-content">
+                        <p>经过今天的折腾，本站已成功开启 <strong>站长统计</strong>功能。</p>
+<p>服务依托于<a href="cnzz.com">cnzz.com</a>，访问<a target="_blank" rel="noopener" href="https://new.cnzz.com/v1/login.php?siteid=1279942268">站长统计</a>即可查看站点统计数据。</p>
+<hr>
+<p><strong>如何将站长统计的文字/图片隐藏？</strong></p>
+<p>实现代码如下，将<code>&lt;%- theme.site_analytics_cnzz %&gt;</code>替换成你在cnzz.com上注册的id号。</p>
+<p>再将修改过的代码添加到<code>&lt;head&gt;</code>前，据cnzz网站介绍，“加载CNZZ统计代码不会影响您网页的正常显示和加载速度。”</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.site_analytics_zzcn) &#123; %&gt;<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write(<span class="built_in">unescape</span>(<span class="string">&quot;%3Cspan style=&#x27;display:none;&#x27; id=&#x27;cnzz_stat_icon_&lt;%- theme.site_analytics_cnzz %&gt;&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D&lt;%- theme.site_analytics_cnzz %&gt;&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;</span>));</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+
+                    </div>
+                    <footer class="kratos-entry-footer clearfix">
+                        <div class="post-like-donate text-center clearfix">
+                            <a class="read-more" href="/cnzz/#more" title="成功开启站长统计">继续阅读 <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
+                    </footer>
+                </div>
+            </article>
+        
+    
+        
+        
+            <article>
+                <div class="kratos-hentry kratos-post-inner clearfix index-post">
+                    <div class="kratos-entry-thumb-new">
                         <a href="/talk/">
                             
                         </a>
@@ -192,7 +263,7 @@
                         <blockquote>
 <p><a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a> | 一款基于 Valine 衍生的简洁、安全的评论系统。</p>
 </blockquote>
-<p>经过昨天的一天的折腾，本站已成功启用主题内置<strong>Waline</strong>评论区功能，欢迎在本站文章下评论区留言。</p>
+<p>经过昨天的昨天的折腾，本站已成功启用主题内置<strong>Waline</strong>评论区功能，欢迎在本站文章下评论区留言。</p>
 <p>使用<strong>Waline</strong>的过程虽然比<strong>Valine</strong>稍复杂。但<strong>Waline</strong>不仅是一个评论系统，还具有文章阅读量统计功能。同时，也有一个简单的后端管理系统，方便进行内容管理，具体更多功能可参见<a target="_blank" rel="noopener" href="https://waline.js.org/get-started.html">官网文档</a>。</p>
 <p>总之就是十分强大！</p>
 <hr>
@@ -444,77 +515,11 @@
             </article>
         
     
-        
-        
-            <article>
-                <div class="kratos-hentry kratos-post-inner clearfix index-post">
-                    <div class="kratos-entry-thumb-new">
-                        <a href="/hello-world/">
-                            
-                        </a>
-                    </div>
-                    <header class="kratos-entry-header">
-                        <h1 class="text-center"><a class="kratos-entry-title" href="/hello-world/">Hello World!</a></h1>
-                        
-                        <ul class="kratos-post-meta text-center">
-                            <li>
-                                <i class="fa fa-calendar"></i>
-                                2021-05-15
-                            </li>
-                            
-                                <li>
-                                    <i class="fa fa-folder"></i>
-                                    分类于
-                                    <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
-                                </li>
-                            
-                            
-                                <li>
-                                    <i class="fa fa-tags"></i>
-                                    <a class="tag-none-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>
-                                </li>
-                            
-                            
-                                <!-- 当前仅支持valine/waline自带的统计功能 -->
-                                
-                                    <li id="/hello-world/" class="leancloud_visitors" data-flag-title="Hello World!">
-                                        <i class="fa fa-eye"></i>
-                                        <span class="leancloud-visitors-count"> </span> 次阅读
-                                    </li>
-                                
-                            
-                            
-                                <!-- 当前仅支持waline自带的统计功能 -->
-                                
-                                    <li>
-                                        <i class="fa fa-commenting-o"></i>
-                                        <span data-xid="/hello-world/" class="waline-comment-count"> </span> 条评论
-                                    </li>
-                                
-                            
-                        </ul>
-                    </header>
-                    <hr />
-                    <div class="kratos-post-content">
-                        <blockquote>
-<p>Hello World!</p>
-</blockquote>
-<p><strong>这是我第一次尝试发布的文章。</strong></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Holle World&quot;</span>);<span class="comment">//代码测试</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/05/19/rXSOFDQhaucj98B.png" alt="logo.png" title="sm.ms | 图床测试"></p>
-
-                    </div>
-                    <footer class="kratos-entry-footer clearfix">
-                        <div class="post-like-donate text-center clearfix">
-                            <a class="read-more" href="/hello-world/#more" title="Hello World!">继续阅读 <i class="fa fa-chevron-circle-right"></i></a>
-                        </div>
-                    </footer>
-                </div>
-            </article>
-        
     
     
+        <div class='text-center pagination'>
+        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+        </div>
     
 </section>
 
@@ -570,7 +575,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -590,6 +595,12 @@
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
+            <a class="list-group-item" href="/cnzz/"><i class="fa  fa-book"></i> 成功开启站长统计</a>
+            
+          
         
           
           
@@ -616,11 +627,7 @@
           
         
           
-          
-            <a class="list-group-item" href="/hello-world/"><i class="fa  fa-book"></i> Hello World!</a>
             
-          
-        
       </ul>
   </div>
   </aside>
