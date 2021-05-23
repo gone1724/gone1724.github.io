@@ -4,7 +4,7 @@
 <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="/images/logo.png">
+  <link rel="icon" href="/images/logo.webp">
   <title>Huanzの小窝</title>
   <meta name="author" content="Huanz" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -23,11 +23,11 @@
 <meta property="og:site_name" content="Huanzの小窝">
 <meta property="og:description" content="博客 记录 随笔 回忆 分享 教程 开源">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://huanz.top/images/logo.png">
+<meta property="og:image" content="https://huanz.top/images/logo.webp">
 <meta property="article:author" content="Huanz">
 <meta property="article:tag" content="博客 记录 随笔 回忆 分享 教程 开源">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://huanz.top/images/logo.png">
+<meta name="twitter:image" content="https://huanz.top/images/logo.webp">
 <meta name="twitter:site" content="@null">
   
   <!-- 站点验证相关 -->
@@ -141,6 +141,111 @@
                     
 
         <section class="col-md-8">
+    
+        
+        
+            <article>
+                <div class="kratos-hentry kratos-post-inner clearfix index-post">
+                    <div class="kratos-entry-thumb-new">
+                        <a href="/cloudflare-pages/">
+                            
+                        </a>
+                    </div>
+                    <header class="kratos-entry-header">
+                        <h1 class="text-center"><a class="kratos-entry-title" href="/cloudflare-pages/">用 Cloudflare Pages 替换 GitHub Pages</a></h1>
+                        
+                        <ul class="kratos-post-meta text-center">
+                            <li>
+                                <i class="fa fa-calendar"></i>
+                                2021-05-23
+                            </li>
+                            
+                                <li>
+                                    <i class="fa fa-folder"></i>
+                                    分类于
+                                    <a class="label-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a>
+                                </li>
+                            
+                            
+                                <li>
+                                    <i class="fa fa-tags"></i>
+                                    <a class="tag-none-link" href="/tags/%E5%88%86%E4%BA%AB/" rel="tag">分享</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>, <a class="tag-none-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>
+                                </li>
+                            
+                            
+                                <!-- 当前仅支持valine/waline自带的统计功能 -->
+                                
+                                    <li id="/cloudflare-pages/" class="leancloud_visitors" data-flag-title="用 Cloudflare Pages 替换 GitHub Pages">
+                                        <i class="fa fa-eye"></i>
+                                        <span class="leancloud-visitors-count"> </span> 次阅读
+                                    </li>
+                                
+                            
+                            
+                                <!-- 当前仅支持waline自带的统计功能 -->
+                                
+                                    <li>
+                                        <i class="fa fa-commenting-o"></i>
+                                        <span data-xid="/cloudflare-pages/" class="waline-comment-count"> </span> 条评论
+                                    </li>
+                                
+                            
+                        </ul>
+                    </header>
+                    <hr />
+                    <div class="kratos-post-content">
+                        <h1 id="缘起"><a href="# 缘起" class="headerlink" title="缘起"></a>缘起 </h1><p> 在浏览本 Hexo 主题的作者的博客——<a target="_blank" rel="noopener" href="https://candinya.com/">糖菓·部落 </a> 时，发现他的博客没有托管在 <a href="https://github.io" target="_blank">Github Pages</a> 上，而是使用了<a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a>。虽然我有了解，现在国内外有很多静态网页托管平台，但 GitHub Pages 在各方面算是一个首选。（尤其对于我这种新手）</p>
+<p>与此同时，我之前在 <a target="_blank" rel="noopener" href="https://ziyuan.baidu.com/"> 百度站长平台 </a> 上提交的博客网址至今一个索引量也没有。虽然我的网站刚刚开始不久，但没有一个索引量，使我开始怀疑是不是哪里出了问题。</p>
+<p>于是，我开始在网上搜索 <strong>“博客的搜索引擎收录”</strong>，偶然间发现了这么一篇文章 <a target="_blank" rel="noopener" href="https://zpjiang.me/2020/01/15/let-baidu-index-github-page/"> <strong> 解决百度爬虫无法爬取 Github Pages 个人博客的问题</strong> </a>。</p>
+<blockquote>
+<p><strong>百度爬虫被拒绝访问</strong></p>
+<p>然而，2015 年，因为一些不能细说的原因，Github 开始拒绝百度爬虫的访问，直接返回 403。</p>
+<p>官方给出原因是，百度爬虫爬得太狠，影响了 Github Page 服务的正常使用。这就导致了，但凡在 Github Page 搭建的个人博客，都无法被百度收录。</p>
+</blockquote>
+<p>文中给出的解决方案有：</p>
+<ul>
+<li> <strong>CDN</strong>解决最后一公里的资源分发，但无法完美解决问题，尤其对小流量的个人博客。</li>
+<li> <strong>Coding Pages</strong>做镜像站，但访问时会先出现跳转页面，导致百度爬虫无法正常收录。</li>
+<li> 使用 <a href="zeit.co"> <strong>zeit.co</strong> </a> 提供的静态资源 hosting 服务，本质上他们提供了 <strong>Storage + CDN + DNS</strong> 这一套完整服务。</li>
+</ul>
+<h1 id="发现问题"><a href="# 发现问题" class="headerlink" title="发现问题"></a>发现问题 </h1><p> 受文章 <a target="_blank" rel="noopener" href="https://zpjiang.me/2020/01/15/let-baidu-index-github-page/"> 解决百度爬虫无法爬取 Github Pages 个人博客的问题 </a> 的启发，我想 <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a> 是不是也能解决相同的问题呢。</p>
+<p>于是在网上继续搜索，找到以下博文：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://yanqiyu.info/2021/03/06/cloudflare-pages/">迁移博客到 Cloudflare Pages</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.794td.me/archives/14.html">利用 CloudFlare Pages 搭建一个 Hexo 博客</a></li>
+</ul>
+<p>我开始了解到，<a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages 项目 </a> 现在处于公测阶段 (Public Beta)，任何人都可以使用，只需要注册一个 CloudFlare 账户。Cloudflare Pages 依托于成立于 2009 年 7 月的网络服务提供商<a target="_blank" rel="noopener" href="https://www.cloudflare.com/zh-cn/">Cloudflare, Inc.</a>，因此可以提供稳定的静态网页托管服务。</p>
+<blockquote>
+<p> <strong>“</strong>Cloudflare 家大业大，并且是专门做网络服务的，做网页托管 <strong>应该</strong> 不会太菜吧。<strong>”</strong></p>
+</blockquote>
+<p>转移到 <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a> 能不能解决百度收录的问题，我不知道，但有人用它就说明 <strong>Cloudflare</strong> 不差。</p>
+<h1 id="转移部署"><a href="# 转移部署" class="headerlink" title="转移部署"></a>转移部署 </h1><p> 不行，我要给我的博客最好的环境，折腾开始！当然，如果已有 <strong>GitHub Pages</strong> 搭建好的博客，单纯想要把把托管转移到 <strong>Cloudflare Pages</strong> ，这个过程是不难的。</p>
+<p>在 <a target="_blank" rel="noopener" href="https://pages.cloudflare.com/"> <strong>Pages</strong> </a> 注册好账号，点击那个大大的黄色的 <strong>Get Started</strong> 按钮，按照指引授权 <strong>GitHub</strong> 权限，选择构建使用的仓库(就是 <strong>GitHub Pages</strong> 的仓库地址)。</p>
+<p>设置构建的命令，我不太懂，也没有改动，结果就部署完成了，就不管它了。</p>
+<p><strong>【部署完成】</strong>&gt;&gt; <a target="_blank" rel="noopener" href="https://gone1724-github-io.pages.dev/">https://gone1724-github-io.pages.dev</a></p>
+<h1 id="域名解析"><a href="# 域名解析" class="headerlink" title="域名解析"></a>域名解析 </h1><p> 我的域名 <a href="https://huanz.top/">huanz.top</a> 之前托管在<a href="dnspod.cn">DNSPod</a>，但 <strong>Cloudflare</strong> 也提供了 DNS 解析服务，就顺便也试用了一下免费的解析套餐。</p>
+<p><img src="https://i.loli.net/2021/05/23/y4iH3FZjhJIf7rn.png" alt="屏幕截图 2021-05-23 143416.png"></p>
+<h1 id="部署原理"><a href="# 部署原理" class="headerlink" title="部署原理"></a>部署原理 </h1><p> 以下是我的理解：</p>
+<ul>
+<li><strong>Hexo</strong> 把本地生成好的静态文件上传到 <strong>GitHub</strong> 仓库里。</li>
+<li><strong>Cloudflare Pages</strong> 会自动访问 <strong>GitHub</strong> 仓库，在自己的主机上生成一个网站，完成部署。</li>
+<li>此时，博客网站已完全脱离 <strong>GitHub/GitHub Pages</strong>，在访客访问 <a href="https://huanz.top/">huanz.top</a> 时就会解析到 <strong>Cloudflare</strong> 的主机。<ul>
+<li>同理，<strong>GitHub Pages</strong> 则是在自己主机上生成，主机在国外。</li>
+<li><strong>Cloudflare Pages</strong> 在香港、台湾有主机，所以国内访问速度会较快。</li>
+</ul>
+</li>
+</ul>
+<h1 id="更多细节"><a href="# 更多细节" class="headerlink" title="更多细节"></a>更多细节 </h1><p> 更多细节上的疑问，欢迎在下面评论区进行留言交流。</p>
+
+                    </div>
+                    <footer class="kratos-entry-footer clearfix">
+                        <div class="post-like-donate text-center clearfix">
+                            <a class="read-more" href="/cloudflare-pages/#more" title="用 Cloudflare Pages 替换 GitHub Pages">继续阅读 <i class="fa fa-chevron-circle-right"></i></a>
+                        </div>
+                    </footer>
+                </div>
+            </article>
+        
     
         
         
@@ -591,7 +696,7 @@
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/">建站日志</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -600,7 +705,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 0.7em;">分享</a> <a href="/tags/%E5%9B%9E%E5%BF%86/" style="font-size: 0.6em;">回忆</a> <a href="/tags/%E5%BC%80%E6%BA%90/" style="font-size: 0.6em;">开源</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.6em;">教程</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 0.8em;">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 0.6em;">随笔</a>
+        <a href="/tags/%E5%88%86%E4%BA%AB/" style="font-size: 0.73em;">分享</a> <a href="/tags/%E5%9B%9E%E5%BF%86/" style="font-size: 0.6em;">回忆</a> <a href="/tags/%E5%BC%80%E6%BA%90/" style="font-size: 0.6em;">开源</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.67em;">教程</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 0.8em;">记录</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 0.6em;">随笔</a>
       </div>
   </aside>
 
@@ -611,6 +716,12 @@
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
+            <a class="list-group-item" href="/cloudflare-pages/"><i class="fa  fa-book"></i> 用 Cloudflare Pages 替换 GitHub Pages</a>
+            
+          
         
           
           
@@ -637,11 +748,7 @@
           
         
           
-          
-            <a class="list-group-item" href="/my-domain/"><i class="fa  fa-book"></i> 我的域名</a>
             
-          
-        
           
             
       </ul>
