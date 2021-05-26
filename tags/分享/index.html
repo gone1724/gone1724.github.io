@@ -199,59 +199,9 @@
                     <hr />
                     <div class="kratos-post-content">
                         <blockquote>
-<p>用 Cloudflare Pages 替换 GitHub Pages。</p>
+<p>用Cloudflare Pages替换GitHub Pages。</p>
 </blockquote>
-<h1 id="缘起"><a href="# 缘起" class="headerlink" title="缘起"></a>缘起 </h1><p> 在浏览本 Hexo 主题的作者的博客——<a target="_blank" rel="noopener" href="https://candinya.com/">糖菓·部落 </a> 时，发现他的博客没有托管在 <a href="https://github.io" target="_blank">Github Pages</a> 上，而是使用了<a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a>。虽然我有了解，现在国内外有很多静态网页托管平台，但 GitHub Pages 在各方面算是一个首选。（尤其对于我这种新手）</p>
-<p>与此同时，我之前在 <a target="_blank" rel="noopener" href="https://ziyuan.baidu.com/"> 百度站长平台 </a> 上提交的博客网址至今一个索引量也没有。虽然我的网站刚刚开始不久，但没有一个索引量，使我开始怀疑是不是哪里出了问题。</p>
-<p>于是，我开始在网上搜索 <strong>“博客的搜索引擎收录”</strong>，偶然间发现了这么一篇文章 <a target="_blank" rel="noopener" href="https://zpjiang.me/2020/01/15/let-baidu-index-github-page/"> <strong> 解决百度爬虫无法爬取 Github Pages 个人博客的问题</strong> </a>。</p>
-<blockquote>
-<p><strong>百度爬虫被拒绝访问</strong></p>
-<p>然而，2015 年，因为一些不能细说的原因，Github 开始拒绝百度爬虫的访问，直接返回 403。官方给出原因是，百度爬虫爬得太狠，影响了 Github Page 服务的正常使用。这就导致了，但凡在 Github Page 搭建的个人博客，都无法被百度收录。</p>
-</blockquote>
-<p>文中给出的解决方案有：</p>
-<ul>
-<li> <strong>CDN</strong>解决最后一公里的资源分发，但无法完美解决问题，尤其对小流量的个人博客。</li>
-<li> <strong>Coding Pages</strong>做镜像站，但访问时会先出现跳转页面，导致百度爬虫无法正常收录。</li>
-<li> 使用 <a href="zeit.co"> <strong>zeit.co</strong> </a> 提供的静态资源 hosting 服务，本质上他们提供了 <strong>Storage + CDN + DNS</strong> 这一套完整服务。</li>
-</ul>
-<h1 id="解决问题"><a href="# 解决问题" class="headerlink" title="解决问题"></a>解决问题 </h1><p> 受文章 <a target="_blank" rel="noopener" href="https://zpjiang.me/2020/01/15/let-baidu-index-github-page/"> 解决百度爬虫无法爬取 Github Pages 个人博客的问题 </a> 的启发，我想 <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a> 是不是也能解决相同的问题呢。</p>
-<p>于是在网上继续搜索，找到以下博文：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://yanqiyu.info/2021/03/06/cloudflare-pages/">迁移博客到 Cloudflare Pages</a></li>
-<li><a target="_blank" rel="noopener" href="https://blog.794td.me/archives/14.html">利用 CloudFlare Pages 搭建一个 Hexo 博客</a></li>
-</ul>
-<p>我开始了解到，<a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages 项目 </a> 现在处于公测阶段 (Public Beta)，任何人都可以使用，只需要注册一个 CloudFlare 账户。免费套餐单月可部署 500 次，无限流量。Cloudflare Pages 依托于成立于 2009 年 7 月的网络服务提供商<a target="_blank" rel="noopener" href="https://www.cloudflare.com/zh-cn/">Cloudflare, Inc.</a>，因此可以提供稳定的静态网页托管服务。</p>
-<blockquote>
-<p> <strong>“ Cloudflare 家大业大，并且是专门做网络服务的，做网页托管应该不会太菜吧。 ”</strong></p>
-</blockquote>
-<p><img src="https://i.loli.net/2021/05/23/ldZbDFGcrsw3iU2.png" alt="屏幕截图 2021-05-23 213728.png"></p>
-<p>转移到 <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a> 能不能解决百度收录的问题，我不知道，但有人用它就说明 <strong>Cloudflare</strong> 不差。</p>
-<h1 id="转移部署"><a href="# 转移部署" class="headerlink" title="转移部署"></a>转移部署 </h1><p> 不行，我要给我的博客最好的环境，折腾开始！当然，如果已有 <strong>GitHub Pages</strong> 搭建好的博客，单纯想要把把托管转移到 <strong>Cloudflare Pages</strong> ，这个过程是不难的。</p>
-<p>在 <a target="_blank" rel="noopener" href="https://pages.cloudflare.com/"> <strong>Pages</strong> </a> 注册好账号，点击那个大大的黄色的 <strong>Get Started</strong> 按钮，按照指引授权 <strong>GitHub</strong> 权限，选择构建使用的仓库(就是 <strong>GitHub Pages</strong> 的仓库地址)。</p>
-<p>设置构建的命令，我不太懂，也没有改动，结果就部署完成了，就不管它了。</p>
-<p><strong>【部署完成】</strong>&gt;&gt; <a target="_blank" rel="noopener" href="https://gone1724-github-io.pages.dev/">https://gone1724-github-io.pages.dev</a></p>
-<p>我实测从上传完成，到部署完成用时在 50s 左右。</p>
-<h1 id="域名解析"><a href="# 域名解析" class="headerlink" title="域名解析"></a>域名解析 </h1><p> 我的域名 <a href="https://huanz.top/">huanz.top</a> 之前托管在<a href="dnspod.cn">DNSPod</a>。由于 <strong>Cloudflare</strong> 也提供了 DNS 解析服务，就顺便也试用了一下它的免费的解析套餐。</p>
-<p><img src="https://i.loli.net/2021/05/23/y4iH3FZjhJIf7rn.png" alt="屏幕截图 2021-05-23 143416.png"></p>
-<p>感觉上速度不太行，已换回<a href="dnspod.cn">DNSPod</a>，注意 <strong>Cloudflare</strong> 的自定义域不要删除，只把 <strong>Cloudflare</strong> 的 DNS 解析服务的 CNAME 记录删除即可。</p>
-<p><img src="https://i.loli.net/2021/05/23/ZBUEs9biAICw5jv.png" alt="屏幕截图 2021-05-23 214355.png"></p>
-<p><img src="https://i.loli.net/2021/05/23/ypuDXs13vUj9lw4.png" alt="屏幕截图 2021-05-23 214521.png"></p>
-<p><img src="https://i.loli.net/2021/05/23/GXLazWo7U6JkMNO.png" alt="屏幕截图 2021-05-23 214603.png"></p>
-<h1 id="部署原理"><a href="# 部署原理" class="headerlink" title="部署原理"></a>部署原理 </h1><p> 以下是我的理解：</p>
-<ul>
-<li><strong>Hexo</strong> 把本地生成好的静态文件上传到 <strong>GitHub</strong> 仓库里。</li>
-<li><strong>Cloudflare Pages</strong> 会自动访问 <strong>GitHub</strong> 仓库，在自己的主机上生成一个网站，完成部署。</li>
-<li>此时，博客网站已完全脱离 <strong>GitHub/GitHub Pages</strong>，在访客访问 <a href="https://huanz.top/">huanz.top</a> 时就会解析到 <strong>Cloudflare</strong> 的主机。<ul>
-<li>同理，<strong>GitHub Pages</strong> 则是在自己主机上生成，主机在国外。</li>
-<li><del><strong>Cloudflare Pages</strong> 在香港、台湾有主机，所以国内访问速度会较快。</del></li>
-<li><strong>Cloudflare Pages</strong> 在国内有主机，访问速度会较快。（官网介绍）</li>
-<li>但目前来看，主机还是美国节点，速度看 <a target="_blank" rel="noopener" href="https://www.ping.cn/ping/huanz.top"> 这里</a></li>
-</ul>
-</li>
-</ul>
-<p><img src="https://i.loli.net/2021/05/23/UdFsluekOYTfw7m.png" alt="global-network.png"></p>
-<h1 id="更多细节"><a href="# 更多细节" class="headerlink" title="更多细节"></a>更多细节 </h1><p> 更多细节上的疑问，欢迎在下面评论区进行留言交流。</p>
-
+<h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>在浏览本Hexo主题的作者的博客——<a target="_blank" rel="noopener" href="https://candinya.com/">糖菓·部落</a>时，发现他的博客没有托管在<a href="https://github.io" target="_blank">Github Pages</a>上，而是使用了<a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a>。虽然我有了解，现在国内外有很多静态网页托管平台，但GitHub Pages在各方面应该算是一个首选。（尤其对于我这种新手）</p>
                     </div>
                     <footer class="kratos-entry-footer clearfix">
                         <div class="post-like-donate text-center clearfix">
@@ -315,24 +265,7 @@
                     <hr />
                     <div class="kratos-post-content">
                         <p>经过今天的折腾，本站已成功开启 <strong>站长统计</strong> 功能。</p>
-<p>服务依托于 <a target="_blank" rel="noopener" href="https://www.umeng.com/">cnzz.com</a>，访问<a target="_blank" rel="noopener" href="https://new.cnzz.com/v1/login.php?siteid=1279942268"> 站长统计 </a> 即可查看我站统计数据。</p>
-<hr>
-<h2 id="如何添加 cnzz-com 站长统计代码到网页上？"><a href="# 如何添加 cnzz-com 站长统计代码到网页上？" class="headerlink" title="如何添加 cnzz.com 站长统计代码到网页上？"></a>如何添加 cnzz.com 站长统计代码到网页上？</h2><p>据 cnzz 网站介绍，将统计代码粘贴到您网站所有页面的 <code>&lt;/body&gt;</code> 前，添加成功后开始统计。</p>
-<p>同时 cnzz 网站说明，<em>加载 CNZZ 统计代码不会影响您网页的正常显示和加载速度。</em></p>
-<h2 id="如何将站长统计的文字 - 图片隐藏？"><a href="# 如何将站长统计的文字 - 图片隐藏？" class="headerlink" title="如何将站长统计的文字 / 图片隐藏？"></a>如何将站长统计的文字 / 图片隐藏？</h2><p>在统计代码 javascript 中的 ducument.write(unescape(“%3Cspan 和 id=’cnzz_stat_icon’中间加上 <code>style=&#39;display:none</code> 即可。</p>
-<p>如本网站的代码实现如下。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write(<span class="built_in">unescape</span>(<span class="string">&quot;%3Cspan style=&#x27;display:none;&#x27; id=&#x27;cnzz_stat_icon_1279942268&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D1279942268&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;</span>));</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="本主题 KRATOS-REBIRTH 是如何实现的？"><a href="# 本主题 KRATOS-REBIRTH 是如何实现的？" class="headerlink" title="本主题 KRATOS:REBIRTH 是如何实现的？"></a>本主题 <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">KRATOS:REBIRTH</a> 是如何实现的？</h2><p>本博客使用 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 搭建，几乎无需触碰底层代码，当仍可通过修改主题文件对网站实现自定义。我当前使用的主题 <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">KRATOS:REBIRTH</a> 默认支持在页尾添加统计代码。</p>
-<p>具体位置在 <code>themes\Kratos-Rebirth\_config.yml</code> 文件中 <code># Global 全局配置</code> 的<code>site_analytics:</code>。</p>
-<p>如果想要按照 cnzz.com 的要求，“网站所有页面的 </body> 前。”则需要打开 <code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code> 文件，在文本的最前面添加统计代码，再对博客进行部署。</p>
-<h2 id="我对主题文件做了什么？"><a href="# 我对主题文件做了什么？" class="headerlink" title="我对主题文件做了什么？"></a>我对主题文件做了什么？</h2><p>在 <code>themes\Kratos-Rebirth\_config.yml</code> 文件中 <code># Global 全局配置</code> 的最后添加一个自定义项如下。</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site<span class="emphasis">_analytics_</span>cnzz: 1279942268 #输入 www.CNZZ.com 的站长统计 id 号，默认在网页中隐藏</span><br></pre></td></tr></table></figure>
-
-<p>在 <code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code> 文件中，在文本最前添加如下代码, 自定义项与前面对应。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.site_analytics_cnzz) &#123; %&gt;<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write(<span class="built_in">unescape</span>(<span class="string">&quot;%3Cspan style=&#x27;display:none;&#x27; id=&#x27;cnzz_stat_icon_&lt;%- theme.site_analytics_cnzz %&gt;&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D&lt;%- theme.site_analytics_cnzz %&gt;&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;</span>));</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-<p>这样当我更换域名，只需修改在配置文件中统计代码 id 号即可。</p>
-
+<p>服务依托于<a target="_blank" rel="noopener" href="https://www.umeng.com/">cnzz.com</a>，访问<a target="_blank" rel="noopener" href="https://new.cnzz.com/v1/login.php?siteid=1279942268">站长统计</a>即可查看我站统计数据。</p>
                     </div>
                     <footer class="kratos-entry-footer clearfix">
                         <div class="post-like-donate text-center clearfix">
@@ -398,40 +331,7 @@
                         <blockquote>
 <p><a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a> | 一款基于 Valine 衍生的简洁、安全的评论系统。</p>
 </blockquote>
-<p>经过昨天的昨天的折腾，本站已成功启用主题内置 <strong>Waline</strong> 评论区功能，欢迎在本站文章下评论区留言。</p>
-<p>使用 <strong>Waline</strong> 的过程虽然比 <strong>Valine</strong> 稍复杂。但 <strong>Waline</strong> 不仅是一个评论系统，还具有文章阅读量统计功能。同时，也有一个简单的后端管理系统，方便进行内容管理，具体更多功能可参见 <a target="_blank" rel="noopener" href="https://waline.js.org/get-started.html"> 官网文档</a>。</p>
-<p>总之就是十分强大！</p>
-<hr>
-<p><strong>在此感谢：</strong></p>
-<table>
-<thead>
-<tr>
-<th align="left">服务商</th>
-<th align="left">帮助的项目</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a></td>
-<td align="left">提供的强大的评论区系统服务。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://console.leancloud.app/">Leancloud</a></td>
-<td align="left">提供数据存储支持。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://github.com/">Github</a></td>
-<td align="left">提供评论区数据存储支持。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://vercel.com/">Vercel</a></td>
-<td align="left">提供项目生成的技术支持。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://en.gravatar.com/">Gravater</a></td>
-<td align="left">提供评论区头像支持。</td>
-</tr>
-</tbody></table>
-
+<p>经过昨天的昨天的折腾，本站已成功启用主题内置<strong>Waline</strong>评论区功能，欢迎在本站文章下评论区留言。</p>
                     </div>
                     <footer class="kratos-entry-footer clearfix">
                         <div class="post-like-donate text-center clearfix">
@@ -497,19 +397,7 @@
                         <blockquote>
 <p>今天就拿 <strong>GitHub</strong> 的另一个项目水一篇博客，这是要日更的节奏啊。🤪</p>
 </blockquote>
-<h1 id="2021 智能车单车组硬件开源"><a href="#2021 智能车单车组硬件开源" class="headerlink" title="2021 智能车单车组硬件开源"></a>2021 智能车单车组硬件开源 </h1><p> 本人参与硬件部分，不过也是新手。把自己的硬件部分开源，希望和大家一起交流进步。好多资料网络上都可以查得到的，可以认为这里做的是硬件方案的分享。</p>
-<p>本篇博客记录截至<code>2021.5.18</code>，最新更新请前往<a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K">GitHub 项目地址</a>。</p>
-<hr>
-<h2 id="2021-3-20"><a href="#2021-3-20" class="headerlink" title="2021-3-20"></a>2021-3-20</h2><p>先上传前期的一套方案的原理图，目前遇到的问题是主板模块下载程序成功率较低。<br>可能是 MCU 供电和 USB 转 TTL 电压因为分开供电，电压不稳造成的。</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MCU.~(118).SchDoc">MCU.~(118).SchDoc</a><br><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MOTOR%20V1.1.SchDoc">MOTOR V1.1.SchDoc</a><br><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/OPA4377%E5%9B%9B%E8%B7%AF%20V2.0.SchDoc">OPA4377 四路 V2.0.SchDoc</a></p>
-<h2 id="2021-3-22"><a href="#2021-3-22" class="headerlink" title="2021-3-22"></a>2021-3-22</h2><p>究极一体板方案！（bushi）这是最近尝试的一体板方案，包括全桥驱动芯片和四电感运放部分，希望不要出问题。</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MCU%20V3.1.SchDoc">MCU V3.1.SchDoc</a></p>
-<h2 id="2021-4-7"><a href="#2021-4-7" class="headerlink" title="2021-4-7"></a>2021-4-7</h2><p>MCU V3.1 的驱动部分，8V 稳压好像只能到 7.1V。</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MCU%20V3.1.SchDoc">MCU V3.1.SchDoc</a></p>
-<h2 id="2021-5-17"><a href="#2021-5-17" class="headerlink" title="2021-5-17"></a>2021-5-17</h2><p>把主板上稳压去掉了，用的之前的驱动板驱动，几个月了，稳的一批。<br>不过我现在的 2350 运放又出问题了，之前还能用，现在咋用不了了，气！<br><a target="_blank" rel="noopener" href="https://github.com/gone1724/Smartcar_K/blob/main/MCU%20V3.1.SchDoc">MCU V3.1.SchDoc</a></p>
-<hr>
-<p><img src="https://raw.githubusercontent.com/gone1724/Smartcar_K/main/My%20Car%E2%80%98s%20Photos/IMG_20210408_161804.jpg" alt="My Car&#39;s Photos" title="没加电磁的 K 车, 冲冲冲"></p>
-
+<h1 id="2021智能车单车组硬件开源"><a href="#2021智能车单车组硬件开源" class="headerlink" title="2021智能车单车组硬件开源"></a>2021智能车单车组硬件开源</h1><p>本人参与硬件部分，不过也是新手。把自己的硬件部分开源，希望和大家一起交流进步。好多资料网络上都可以查得到的，可以认为这里做的是硬件方案的分享。</p>
                     </div>
                     <footer class="kratos-entry-footer clearfix">
                         <div class="post-like-donate text-center clearfix">
