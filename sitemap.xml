@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://huanz.top/m/me.html</loc>
-    
-    <lastmod>2021-05-27</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://huanz.top/cnzz/</loc>
     
     <lastmod>2021-05-27</lastmod>
@@ -17,6 +10,13 @@
   
   <url>
     <loc>https://huanz.top/about/index.html</loc>
+    
+    <lastmod>2021-05-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://huanz.top/about/me.html</loc>
     
     <lastmod>2021-05-27</lastmod>
     
