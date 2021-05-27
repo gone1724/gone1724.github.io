@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/logo.webp">
-  <title>小伙伴们 | Huanzの小窝</title>
+  <title>欢迎交换友链，请在本页面留言~ | Huanzの小窝</title>
   <meta name="author" content="Huanz" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -15,14 +15,16 @@
   
     <meta name="keywords" content="博客 记录 随笔 回忆 分享 教程 开源" />
   
-  <meta name="description" content="小伙伴们在哪里~">
+  <meta name="description" content="欢迎交换友链，请在本页面留言~">
 <meta property="og:type" content="website">
-<meta property="og:title" content="小伙伴们">
-<meta property="og:url" content="https://huanz.top/friends/index.html">
+<meta property="og:title" content="欢迎交换友链，请在本页面留言~">
+<meta property="og:url" content="https://huanz.top/make-friend/index.html">
 <meta property="og:site_name" content="Huanzの小窝">
-<meta property="og:description" content="小伙伴们在哪里~">
+<meta property="og:description" content="欢迎交换友链，请在本页面留言~">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://huanz.top/images/logo.webp">
+<meta property="article:published_time" content="2021-05-27T02:10:12.000Z">
+<meta property="article:modified_time" content="2021-05-27T10:36:48.840Z">
 <meta property="article:author" content="Huanz">
 <meta property="article:tag" content="博客 记录 随笔 回忆 分享 教程 开源">
 <meta name="twitter:card" content="summary">
@@ -157,51 +159,8 @@
     <article>
         <div class="kratos-hentry kratos-post-inner clearfix">
             <div class="kratos-post-content">
-                <h2 class="title-h2 text-center">小伙伴们</h2>
-                
-<div style="text-align:center;">欢迎🥳</div>
-<p>只要你对我的所写内容感兴趣，我们就是好朋友！</p>
-<p>和俺交换友链，就可以成为我的小伙伴哦~</p>
-<p>小站刚刚成立，欢迎各位的捧场。</p>
-
-
-<div class="xControl">
-<div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>😜和俺成为好伙伴</span></div>
-<div class="xContent"><div class="inner">
-<p>和俺交换友链，在<a href="https://huanz.top/make-friend/">此页面</a> 留言即可哦~</p>
-<p>请尽量包含如下元素</p>
-<ul>
-<li>name: Huanzの小窝</li>
-<li>desc: 那是一小块凝固的时间，时间上有美丽的条纹，摸起来像浅海的泥一样柔软</li>
-<li>img: <a target="_blank" rel="noopener" href="https://huanz.top/images/logo.webp">https://huanz.top/images/logo.webp</a></li>
-<li>url: <a href="https://huanz.top/">https://huanz.top/ </a> </li>
-</ul>
-</div>
-</div>
-</div>
-
-
-<div class="linkpage">
-    <ul id="friendsList"></ul>
-</div>
-
-<script type="text/javascript">
-{
-    const flist = JSON.parse(`[{"name":"itsNekoDeng","bio":"十万伏特皮卡丘，梦想是世界和平，想要发光发热","avatar":"https://nekodeng.gitee.io/medias/avatar.jpg","link":"https://nekodeng.gitee.io"},{"name":"芝士部落格","bio":"有思想，也有忧伤和理想","avatar":"https://wweoz.com/images/avatar.jpg","link":"https://www.wweoz.com"}]`);
-    let friendNodes = '';
-    while (flist.length > 0) {
-        const rndNum = Math.floor(Math.random()*flist.length);
-        friendNodes += `<li><a target="_blank" href="${flist[rndNum].link}"><img src="${flist[rndNum].avatar}"><h4>${flist[rndNum].name}</h4><p>${flist[rndNum].bio}</p></a></li>`;
-        flist.splice(rndNum, 1);
-    }
-    document.getElementById("friendsList").innerHTML = friendNodes;
-}
-</script>
-
-
-<div class="alert alert-info"><p>正在学习如何把列表每次打开都会随机排序</p>
-</div>
-
+                <h2 class="title-h2 text-center">欢迎交换友链，请在本页面留言~</h2>
+                <p> 欢迎交换友链，请在本页面留言~</p>
 
             </div>
             <footer class="kratos-entry-footer clearfix">
@@ -213,6 +172,26 @@
             </footer>
         </div>
         
+            <div id="w-comments" class="post-comments"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Waline(Object.assign({
+                el: '#w-comments',
+                path: '/make-friend/index.html'
+            }, JSON.parse('{"serverURL":"https://waline-ebon-phi.vercel.app/","visitor":true}')));
+        }
+        if (typeof Waline == 'undefined') {
+            const src = 'https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://waline.js.org/">comments powered by Waline.</a></noscript>
+
+        
     </article>
 </section>
 
@@ -221,8 +200,6 @@
 
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
-    
-        <div class="sticky-area">
     
     
                 <aside id="krw-about" class="widget widget-kratos-about clearfix">
@@ -237,6 +214,8 @@
     </div>
 </aside>
             
+                    <div class="sticky-area">
+                
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
