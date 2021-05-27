@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <script type="text/javascript">document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1279942268'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279942268' type='text/javascript'%3E%3C/script%3E"));</script>
-<head>
+    <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/logo.webp">
@@ -25,7 +24,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://huanz.top/images/logo.webp">
 <meta property="article:published_time" content="2021-05-20T13:40:00.000Z">
-<meta property="article:modified_time" content="2021-05-26T12:28:54.838Z">
+<meta property="article:modified_time" content="2021-05-27T08:27:27.003Z">
 <meta property="article:author" content="Huanz">
 <meta property="article:tag" content="记录">
 <meta property="article:tag" content="分享">
@@ -63,6 +62,8 @@
   <!-- 不得不预先加载的一些JS文件 -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   
+  
+  <script type="text/javascript">document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1279942268'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279942268' type='text/javascript'%3E%3C/script%3E"));</script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
@@ -171,7 +172,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~1.65K
+                            ~1.67K
                         
                         字
                     </li>
@@ -191,7 +192,7 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1622032134838"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1622104047003"></time> 前，其中的内容可能需要更新。
                 </div>
                 
                     <div class="kratos-post-inner-toc">
@@ -215,7 +216,7 @@
 <h2 id="我对主题文件做了什么？"><a href="# 我对主题文件做了什么？" class="headerlink" title="我对主题文件做了什么？"></a>我对主题文件做了什么？</h2><p>在 <code>themes\Kratos-Rebirth\_config.yml</code> 文件中 <code># Global 全局配置</code> 的最后添加一个自定义项如下。</p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site<span class="emphasis">_analytics_</span>cnzz: 1279942268 #输入 www.CNZZ.com 的站长统计 id 号，默认在网页中隐藏</span><br></pre></td></tr></table></figure>
 
-<p>在 <code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code> 文件中，在文本最前添加如下代码, 自定义项与前面对应。</p>
+<p>在 <code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code> 文件中，在文本最后， <code>&lt;/body&gt;</code>之前，添加如下代码, 自定义项与前面对应。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.site_analytics_cnzz) &#123; %&gt;<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write(<span class="built_in">unescape</span>(<span class="string">&quot;%3Cspan style=&#x27;display:none;&#x27; id=&#x27;cnzz_stat_icon_&lt;%- theme.site_analytics_cnzz %&gt;&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D&lt;%- theme.site_analytics_cnzz %&gt;&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;</span>));</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
 <p>这样当我更换域名，只需修改在配置文件中统计代码 id 号即可。</p>
 
@@ -233,7 +234,7 @@
                         <a class="tag-none-link" href="/tags/%E5%88%86%E4%BA%AB/" rel="tag">分享</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>, <a class="tag-none-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2021-05-26</span>
+                    <span>最后编辑：2021-05-27</span>
                     </div>
                 </div>
             </footer>
