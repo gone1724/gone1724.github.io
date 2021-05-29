@@ -6,7 +6,7 @@
   <link href="https://huanz.top/atom.xml" rel="self"/>
   
   <link href="https://huanz.top/"/>
-  <updated>2021-05-27T05:23:10.000Z</updated>
+  <updated>2021-05-29T12:30:12.000Z</updated>
   <id>https://huanz.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Solidworks 制图需要的字体</title>
+    <link href="https://huanz.top/fonts/"/>
+    <id>https://huanz.top/fonts/</id>
+    <published>2021-05-29T12:30:12.000Z</published>
+    <updated>2021-05-29T12:30:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p> 最近在做制图课程设计，用 Solidworks 出工程图，这里是我给电脑上安装的几种字体。</p></blockquote><span id="more"></span><p>Solidworks(简称 SW), 是机械 3D 制图入门软件。</p><p> 我的教材书里规定（也是国标规定），中文字体使用长仿宋体, 数字拉丁文使用使用 A 型和 B 型字体。因为没找的所谓 B 型字体，在网上搜索知道是所谓的 ISOGP 系列字体。另外今天画完一张工程图生成 PDF 时，SW 提示错误。</p><p>&lt; 未完待续…&gt;</p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;最近在做制图课程设计，用Solidworks出工程图，这里是我给电脑上安装的几种字体。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>战略转移 Cloudflare</title>
