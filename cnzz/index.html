@@ -172,7 +172,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~1.67K
+                            ~1.53K
                         
                         字
                     </li>
@@ -196,7 +196,7 @@
                 </div>
                 
                     <div class="kratos-post-inner-toc">
-                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%20cnzz-com%20%E7%AB%99%E9%95%BF%E7%BB%9F%E8%AE%A1%E4%BB%A3%E7%A0%81%E5%88%B0%E7%BD%91%E9%A1%B5%E4%B8%8A%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">如何添加 cnzz.com 站长统计代码到网页上？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%B0%86%E7%AB%99%E9%95%BF%E7%BB%9F%E8%AE%A1%E7%9A%84%E6%96%87%E5%AD%97%20-%20%E5%9B%BE%E7%89%87%E9%9A%90%E8%97%8F%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">如何将站长统计的文字 &#x2F; 图片隐藏？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E4%B8%BB%E9%A2%98%20KRATOS-REBIRTH%20%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">本主题 KRATOS:REBIRTH 是如何实现的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E5%AF%B9%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">我对主题文件做了什么？</span></a></li></ol>
+                        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%20cnzz-com%20%E7%AB%99%E9%95%BF%E7%BB%9F%E8%AE%A1%E4%BB%A3%E7%A0%81%E5%88%B0%E7%BD%91%E9%A1%B5%E4%B8%8A%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">如何添加 cnzz.com 站长统计代码到网页上？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%B0%86%E7%AB%99%E9%95%BF%E7%BB%9F%E8%AE%A1%E7%9A%84%E6%96%87%E5%AD%97%20-%20%E5%9B%BE%E7%89%87%E9%9A%90%E8%97%8F%EF%BC%9F"><span class="toc-number">2.</span> <span class="toc-text">如何将站长统计的文字 &#x2F; 图片隐藏？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E4%B8%BB%E9%A2%98%20KRATOS-REBIRTH%20%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%9F"><span class="toc-number">3.</span> <span class="toc-text">本主题 KRATOS:REBIRTH 是如何实现的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">我做了什么？</span></a></li></ol>
                     </div>
                 
                 <hr />
@@ -212,8 +212,7 @@
 
 <h2 id="本主题 KRATOS-REBIRTH 是如何实现的？"><a href="# 本主题 KRATOS-REBIRTH 是如何实现的？" class="headerlink" title="本主题 KRATOS:REBIRTH 是如何实现的？"></a>本主题 <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">KRATOS:REBIRTH</a> 是如何实现的？</h2><p>本博客使用 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 搭建，几乎无需触碰底层代码，当仍可通过修改主题文件对网站实现自定义。我当前使用的主题 <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">KRATOS:REBIRTH</a> 默认支持在页尾添加统计代码。</p>
 <p>具体位置在 <code>themes\Kratos-Rebirth\_config.yml</code> 文件中 <code># Global 全局配置</code> 的<code>site_analytics:</code>。</p>
-<p>如果想要按照 cnzz.com 的要求，“网站所有页面的 </body> 前。”则需要打开 <code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code> 文件，在文本的最前面添加统计代码，再对博客进行部署。</p>
-<h2 id="我对主题文件做了什么？"><a href="# 我对主题文件做了什么？" class="headerlink" title="我对主题文件做了什么？"></a>我对主题文件做了什么？</h2><p>在 <code>themes\Kratos-Rebirth\_config.yml</code> 文件中 <code># Global 全局配置</code> 的最后添加一个自定义项如下。</p>
+<h2 id="我做了什么？"><a href="# 我做了什么？" class="headerlink" title="我做了什么？"></a>我做了什么？</h2><p>在 <code>themes\Kratos-Rebirth\_config.yml</code> 中添加一个自定义项如下。</p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site<span class="emphasis">_analytics_</span>cnzz: 1279942268 #输入 www.CNZZ.com 的站长统计 id 号，默认在网页中隐藏</span><br></pre></td></tr></table></figure>
 
 <p>在 <code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code> 文件中，在文本最后， <code>&lt;/body&gt;</code>之前，添加如下代码, 自定义项与前面对应。</p>
@@ -306,7 +305,7 @@
         <span class="toc-progress-bar"></span>
     </h4>
     <div class="textwidget">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%20cnzz-com%20%E7%AB%99%E9%95%BF%E7%BB%9F%E8%AE%A1%E4%BB%A3%E7%A0%81%E5%88%B0%E7%BD%91%E9%A1%B5%E4%B8%8A%EF%BC%9F"><span class="toc-text">如何添加 cnzz.com 站长统计代码到网页上？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%B0%86%E7%AB%99%E9%95%BF%E7%BB%9F%E8%AE%A1%E7%9A%84%E6%96%87%E5%AD%97%20-%20%E5%9B%BE%E7%89%87%E9%9A%90%E8%97%8F%EF%BC%9F"><span class="toc-text">如何将站长统计的文字 &#x2F; 图片隐藏？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E4%B8%BB%E9%A2%98%20KRATOS-REBIRTH%20%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%9F"><span class="toc-text">本主题 KRATOS:REBIRTH 是如何实现的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E5%AF%B9%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">我对主题文件做了什么？</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%B7%BB%E5%8A%A0%20cnzz-com%20%E7%AB%99%E9%95%BF%E7%BB%9F%E8%AE%A1%E4%BB%A3%E7%A0%81%E5%88%B0%E7%BD%91%E9%A1%B5%E4%B8%8A%EF%BC%9F"><span class="toc-text">如何添加 cnzz.com 站长统计代码到网页上？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%B0%86%E7%AB%99%E9%95%BF%E7%BB%9F%E8%AE%A1%E7%9A%84%E6%96%87%E5%AD%97%20-%20%E5%9B%BE%E7%89%87%E9%9A%90%E8%97%8F%EF%BC%9F"><span class="toc-text">如何将站长统计的文字 &#x2F; 图片隐藏？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E4%B8%BB%E9%A2%98%20KRATOS-REBIRTH%20%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E7%9A%84%EF%BC%9F"><span class="toc-text">本主题 KRATOS:REBIRTH 是如何实现的？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E5%81%9A%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">我做了什么？</span></a></li></ol>
     </div>
 </aside>
                 
