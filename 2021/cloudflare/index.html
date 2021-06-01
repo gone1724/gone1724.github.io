@@ -4,7 +4,7 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/logo.webp">
-  <title>一起来讨论吧 | Huanzの小窝</title>
+  <title>战略转移 Cloudflare | Huanzの小窝</title>
   <meta name="author" content="Huanz" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -15,16 +15,16 @@
   
     <meta name="keywords" content="Hexo, 分享, 记录" />
   
-  <meta name="description" content="Waline | 一款基于 Valine 衍生的简洁、安全的评论系统  经过昨天的昨天的折腾，本站已成功启用主题内置Waline评论区功能，欢迎在本站文章下评论区留言。">
+  <meta name="description" content="Cloudflare, Inc. | 一个替换GitHub Pages的方案  缘起在浏览本Hexo主题的作者的博客——糖菓·部落时，发现他的博客没有托管在Github Pages上，而是使用了Cloudflare Pages。虽然我有了解，现在国内外有很多静态网页托管平台，但GitHub Pages在各方面应该算是一个首选。（尤其对于我这种新手）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一起来讨论吧">
-<meta property="og:url" content="https://huanz.top/waline/index.html">
+<meta property="og:title" content="战略转移 Cloudflare">
+<meta property="og:url" content="https://huanz.top/2021/cloudflare/index.html">
 <meta property="og:site_name" content="Huanzの小窝">
-<meta property="og:description" content="Waline | 一款基于 Valine 衍生的简洁、安全的评论系统  经过昨天的昨天的折腾，本站已成功启用主题内置Waline评论区功能，欢迎在本站文章下评论区留言。">
+<meta property="og:description" content="Cloudflare, Inc. | 一个替换GitHub Pages的方案  缘起在浏览本Hexo主题的作者的博客——糖菓·部落时，发现他的博客没有托管在Github Pages上，而是使用了Cloudflare Pages。虽然我有了解，现在国内外有很多静态网页托管平台，但GitHub Pages在各方面应该算是一个首选。（尤其对于我这种新手）">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://huanz.top/images/logo.webp">
-<meta property="article:published_time" content="2021-05-20T04:12:50.000Z">
-<meta property="article:modified_time" content="2021-05-20T10:51:41.000Z">
+<meta property="article:published_time" content="2021-05-23T05:23:10.000Z">
+<meta property="article:modified_time" content="2021-05-27T05:23:10.000Z">
 <meta property="article:author" content="Huanz">
 <meta property="article:tag" content="记录">
 <meta property="article:tag" content="分享">
@@ -162,29 +162,29 @@
         <div class="kratos-hentry kratos-post-inner clearfix">
             <header class="kratos-entry-header">
                 
-                    <h1 class="kratos-entry-title text-center">一起来讨论吧</h1>
+                    <h1 class="kratos-entry-title text-center">战略转移 Cloudflare</h1>
                 
                 
                 <ul class="kratos-post-meta text-center">
-                    <li><i class="fa fa-calendar"></i> 2021-05-20</li>
+                    <li><i class="fa fa-calendar"></i> 2021-05-23</li>
                     <li><i class="fa fa-user"></i> 作者 Huanz</li>
                     <li>
                         <i class="fa fa-edit"></i> 
                         
                         
-                            338
+                            ~1.83K
                         
                         字
                     </li>
                     
-                        <li id="/waline/" class="leancloud_visitors" data-flag-title="一起来讨论吧">
+                        <li id="/2021/cloudflare/" class="leancloud_visitors" data-flag-title="战略转移 Cloudflare">
                             <i class="fa fa-eye"></i>
                             <span class="leancloud-visitors-count"> </span> 次阅读
                         </li>
                         
                             <li>
                                 <i class="fa fa-commenting-o"></i>
-                                <span data-xid="/waline/" class="waline-comment-count"> </span> 条评论
+                                <span data-xid="/2021/cloudflare/" class="waline-comment-count"> </span> 条评论
                             </li>
                         
                     
@@ -192,48 +192,67 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1621507901000"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1622092990000"></time> 前，其中的内容可能需要更新。
                 </div>
+                
+                    <div class="kratos-post-inner-toc">
+                        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%98%E8%B5%B7"><span class="toc-number">1.</span> <span class="toc-text">缘起 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">解决问题 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AC%E7%A7%BB%E9%83%A8%E7%BD%B2"><span class="toc-number">3.</span> <span class="toc-text">转移部署 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="toc-number">4.</span> <span class="toc-text">域名解析 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%8E%9F%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">部署原理 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A%E7%BB%86%E8%8A%82"><span class="toc-number">6.</span> <span class="toc-text">更多细节 </span></a></li></ol>
+                    </div>
                 
                 <hr />
                 <blockquote>
-<p><a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a> | 一款基于 Valine 衍生的简洁、安全的评论系统</p>
+<p><a target="_blank" rel="noopener" href="https://www.cloudflare.com/zh-cn/">Cloudflare, Inc.</a> | 一个替换 GitHub Pages 的方案</p>
 </blockquote>
-<p>经过昨天的昨天的折腾，本站已成功启用主题内置 <strong>Waline</strong> 评论区功能，欢迎在本站文章下评论区留言。</p>
+<h1 id="缘起"><a href="# 缘起" class="headerlink" title="缘起"></a>缘起 </h1><p> 在浏览本 Hexo 主题的作者的博客——<a target="_blank" rel="noopener" href="https://candinya.com/">糖菓·部落 </a> 时，发现他的博客没有托管在 <a href="https://github.io" target="_blank">Github Pages</a> 上，而是使用了<a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a>。虽然我有了解，现在国内外有很多静态网页托管平台，但 GitHub Pages 在各方面应该算是一个首选。（尤其对于我这种新手）</p>
 <span id="more"></span>
 
-<p>使用 <strong>Waline</strong> 的过程虽然比 <strong>Valine</strong> 稍复杂。但 <strong>Waline</strong> 不仅是一个评论系统，还具有文章阅读量统计功能。同时，也有一个简单的后端管理系统，方便进行内容管理，具体更多功能可参见 <a target="_blank" rel="noopener" href="https://waline.js.org/get-started.html"> 官网文档</a>。</p>
-<p>总之就是十分强大！</p>
-<hr>
-<p><strong>在此感谢：</strong></p>
-<table>
-<thead>
-<tr>
-<th align="left">服务商</th>
-<th align="left">帮助的项目</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a></td>
-<td align="left">提供的强大的评论区系统服务。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://console.leancloud.app/">Leancloud</a></td>
-<td align="left">提供数据存储支持。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://github.com/">Github</a></td>
-<td align="left">提供评论区数据存储支持。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://vercel.com/">Vercel</a></td>
-<td align="left">提供项目生成的技术支持。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://en.gravatar.com/">Gravater</a></td>
-<td align="left">提供评论区头像支持。</td>
-</tr>
-</tbody></table>
+<p>与此同时，我之前在 <a target="_blank" rel="noopener" href="https://ziyuan.baidu.com/"> 百度站长平台 </a> 上提交的博客网址至今一个索引量也没有。虽然我的网站刚刚开始不久，但没有一个索引量，使我开始怀疑是不是哪里出了问题。</p>
+<p>于是，我开始在网上搜索“博客的搜索引擎收录”，偶然间发现了这么一篇文章 <a target="_blank" rel="noopener" href="https://zpjiang.me/2020/01/15/let-baidu-index-github-page/"> 解决百度爬虫无法爬取 Github Pages 个人博客的问题</a>。</p>
+<blockquote>
+<p><strong>百度爬虫被拒绝访问</strong></p>
+<p>然而，2015 年，因为一些不能细说的原因，Github 开始拒绝百度爬虫的访问，直接返回 403。官方给出原因是，百度爬虫爬得太狠，影响了 Github Page 服务的正常使用。这就导致了，但凡在 Github Page 搭建的个人博客，都无法被百度收录。</p>
+</blockquote>
+<p>文中给出的解决方案有：</p>
+<ul>
+<li> CDN 解决最后一公里的资源分发，但无法完美解决问题，尤其对小流量的个人博客。</li>
+<li> Coding Pages 做镜像站，但访问时会先出现跳转页面，导致百度爬虫无法正常收录。</li>
+<li> 使用 <a href="zeit.co"> zeit.co </a> 提供的静态资源 hosting 服务，本质上他们提供了 Storage+CDN+DNS 这一套完整服务。</li>
+</ul>
+<h1 id="解决问题"><a href="# 解决问题" class="headerlink" title="解决问题"></a>解决问题 </h1><p> 受文章 <a target="_blank" rel="noopener" href="https://zpjiang.me/2020/01/15/let-baidu-index-github-page/"> 解决百度爬虫无法爬取 Github Pages 个人博客的问题 </a> 的启发，我想 <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a> 是不是也能解决相同的问题呢。</p>
+<p>于是在网上继续搜索，找到以下博文：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://yanqiyu.info/2021/03/06/cloudflare-pages/">迁移博客到 Cloudflare Pages</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.794td.me/archives/14.html">利用 CloudFlare Pages 搭建一个 Hexo 博客</a></li>
+</ul>
+<p>我开始了解到，<a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages 项目 </a> 现在处于公测阶段 (Public Beta)，任何人都可以使用，只需要注册一个 CloudFlare 账户。免费套餐单月可部署 500 次，无限流量。Cloudflare Pages 依托于成立于 2009 年 7 月的网络服务提供商<a target="_blank" rel="noopener" href="https://www.cloudflare.com/zh-cn/">Cloudflare, Inc.</a>，因此可以提供稳定的静态网页托管服务。</p>
+<blockquote>
+<p> “ Cloudflare 家大业大，并且是专门做网络服务的，做网页托管应该不会太菜吧。 ”</p>
+</blockquote>
+<p><img src="https://i.loli.net/2021/05/23/ldZbDFGcrsw3iU2.png" alt="屏幕截图 2021-05-23 213728.png"></p>
+<p>转移到 <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a> 能不能解决百度收录的问题，我不知道，但有人用它就说明 Cloudflare 不差。</p>
+<h1 id="转移部署"><a href="# 转移部署" class="headerlink" title="转移部署"></a>转移部署 </h1><p> 不行，我要给我的博客最好的环境，折腾开始！当然，如果已有 GitHub Pages 搭建好的博客，单纯想要把把托管转移到 Cloudflare Pages，这个过程是不难的。</p>
+<p>在 <a target="_blank" rel="noopener" href="https://pages.cloudflare.com/">Pages</a> 注册好账号，点击那个大大的黄色的 Get Started 按钮，按照指引授权 GitHub 权限，选择构建使用的仓库(就是 GitHub Pages 的仓库地址)。</p>
+<p>设置构建的命令，我不太懂，也没有改动，结果就部署完成了，就不管它了。</p>
+<p>【部署完成】&gt;&gt; <a target="_blank" rel="noopener" href="https://gone1724-github-io.pages.dev/">https://gone1724-github-io.pages.dev</a></p>
+<p>我实测从上传完成，到部署完成用时在 50s 左右，实测站点 IP 支持 IPV6。</p>
+<h1 id="域名解析"><a href="# 域名解析" class="headerlink" title="域名解析"></a>域名解析 </h1><p> 我的域名 <a href="https://huanz.top/">huanz.top</a> 之前托管在<a href="dnspod.cn">DNSPod</a>。由于 Cloudflare 也提供了 DNS 解析服务，就顺便也试用了一下它的免费的解析套餐。</p>
+<p><img src="https://i.loli.net/2021/05/23/y4iH3FZjhJIf7rn.png" alt="屏幕截图 2021-05-23 143416.png"></p>
+<p>主观感觉上速度不太行，已换回<a href="dnspod.cn">DNSPod</a>。</p>
+<p><img src="https://i.loli.net/2021/05/23/ZBUEs9biAICw5jv.png" alt="屏幕截图 2021-05-23 214355.png"></p>
+<p><img src="https://i.loli.net/2021/05/23/ypuDXs13vUj9lw4.png" alt="屏幕截图 2021-05-23 214521.png"></p>
+<h1 id="部署原理"><a href="# 部署原理" class="headerlink" title="部署原理"></a>部署原理 </h1><p> 以下是我的理解：</p>
+<ul>
+<li>Hexo 把本地生成好的静态文件上传到 GitHub 仓库里。</li>
+<li>Cloudflare Pages 会自动访问 GitHub 仓库，在自己的主机上生成一个网站，完成部署。</li>
+<li>此时，博客网站已完全脱离 GitHub/GitHub Pages，在访客访问 <a href="https://huanz.top/">huanz.top</a> 时就会解析到 Cloudflare 的主机。<ul>
+<li>同理，GitHub Pages 则是在自己主机上生成，主机在国外。</li>
+<li><del>Cloudflare Pages 在国内有主机，访问速度会较快。（官网介绍）</del></li>
+<li>但目前来看，主机还是美国节点，速度看 <a target="_blank" rel="noopener" href="https://www.ping.cn/ping/huanz.top"> 这里</a></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.loli.net/2021/05/23/UdFsluekOYTfw7m.png" alt="global-network.png"></p>
+<h1 id="更多细节"><a href="# 更多细节" class="headerlink" title="更多细节"></a>更多细节 </h1><p> 更多细节上的疑问，欢迎在下面评论区进行留言交流。</p>
 
             </div>
             
@@ -249,7 +268,7 @@
                         <a class="tag-none-link" href="/tags/Hexo/" rel="tag">Hexo</a>, <a class="tag-none-link" href="/tags/%E5%88%86%E4%BA%AB/" rel="tag">分享</a>, <a class="tag-none-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a>
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2021-05-20</span>
+                    <span>最后编辑：2021-05-27</span>
                     </div>
                 </div>
             </footer>
@@ -258,12 +277,12 @@
             <nav class="navigation post-navigation clearfix" role="navigation">
                 
                 <div class="nav-previous clearfix">
-                    <a title=" 小单车，我们走" href="/smartcar/">&lt; 上一篇</a>
+                    <a title=" 开启站长统计" href="/2021/cnzz/">&lt; 上一篇</a>
                 </div>
                 
                 
                 <div class="nav-next clearfix">
-                    <a title=" 开启站长统计" href="/cnzz/">下一篇 &gt;</a>
+                    <a title=" 制图初体验" href="/2021/solidworks/">下一篇 &gt;</a>
                 </div>
                 
             </nav>
@@ -275,7 +294,7 @@
         const init = () => {
             new Waline(Object.assign({
                 el: '#w-comments',
-                path: '/waline/'
+                path: '/2021/cloudflare/'
             }, JSON.parse('{"serverURL":"https://waline-ebon-phi.vercel.app/","visitor":true}')));
         }
         if (typeof Waline == 'undefined') {
@@ -313,6 +332,18 @@
             
                     <div class="sticky-area">
                 
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix">
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar"></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BC%98%E8%B5%B7"><span class="toc-text">缘起 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="toc-text">解决问题 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AC%E7%A7%BB%E9%83%A8%E7%BD%B2"><span class="toc-text">转移部署 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="toc-text">域名解析 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%8E%9F%E7%90%86"><span class="toc-text">部署原理 </span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A%E7%BB%86%E8%8A%82"><span class="toc-text">更多细节 </span></a></li></ol>
+    </div>
+</aside>
+                
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
@@ -339,31 +370,31 @@
         
           
           
-            <a class="list-group-item" href="/three-body/"><i class="fa  fa-book"></i> 我的三体</a>
+            <a class="list-group-item" href="/2021/three-body/"><i class="fa  fa-book"></i> 我的三体</a>
             
           
         
           
           
-            <a class="list-group-item" href="/solidworks/"><i class="fa  fa-book"></i> 制图初体验</a>
+            <a class="list-group-item" href="/2021/solidworks/"><i class="fa  fa-book"></i> 制图初体验</a>
             
           
         
           
           
-            <a class="list-group-item" href="/cloudflare/"><i class="fa  fa-book"></i> 战略转移 Cloudflare</a>
+            <a class="list-group-item" href="/2021/cloudflare/"><i class="fa  fa-book"></i> 战略转移 Cloudflare</a>
             
           
         
           
           
-            <a class="list-group-item" href="/cnzz/"><i class="fa  fa-book"></i> 开启站长统计</a>
+            <a class="list-group-item" href="/2021/cnzz/"><i class="fa  fa-book"></i> 开启站长统计</a>
             
           
         
           
           
-            <a class="list-group-item" href="/waline/"><i class="fa  fa-book"></i> 一起来讨论吧</a>
+            <a class="list-group-item" href="/2021/waline/"><i class="fa  fa-book"></i> 一起来讨论吧</a>
             
           
         
