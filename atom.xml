@@ -38,11 +38,9 @@
     <category term="读书" scheme="https://huanz.top/categories/%E8%AF%BB%E4%B9%A6/"/>
     
     
-    <category term="记录" scheme="https://huanz.top/tags/%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="分享" scheme="https://huanz.top/tags/%E5%88%86%E4%BA%AB/"/>
-    
     <category term="随笔" scheme="https://huanz.top/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="阅读分享" scheme="https://huanz.top/tags/%E9%98%85%E8%AF%BB%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -66,13 +64,11 @@
     <category term="机械" scheme="https://huanz.top/categories/%E6%9C%BA%E6%A2%B0/"/>
     
     
-    <category term="记录" scheme="https://huanz.top/tags/%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="分享" scheme="https://huanz.top/tags/%E5%88%86%E4%BA%AB/"/>
-    
     <category term="随笔" scheme="https://huanz.top/tags/%E9%9A%8F%E7%AC%94/"/>
     
     <category term="Solidworks" scheme="https://huanz.top/tags/Solidworks/"/>
+    
+    <category term="经验分享" scheme="https://huanz.top/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -96,11 +92,9 @@
     <category term="建站日志" scheme="https://huanz.top/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="记录" scheme="https://huanz.top/tags/%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="分享" scheme="https://huanz.top/tags/%E5%88%86%E4%BA%AB/"/>
-    
     <category term="Hexo" scheme="https://huanz.top/tags/Hexo/"/>
+    
+    <category term="经验分享" scheme="https://huanz.top/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -122,11 +116,9 @@
     <category term="建站日志" scheme="https://huanz.top/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="记录" scheme="https://huanz.top/tags/%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="分享" scheme="https://huanz.top/tags/%E5%88%86%E4%BA%AB/"/>
-    
     <category term="Hexo" scheme="https://huanz.top/tags/Hexo/"/>
+    
+    <category term="经验分享" scheme="https://huanz.top/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -149,10 +141,6 @@
     
     <category term="建站日志" scheme="https://huanz.top/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"/>
     
-    
-    <category term="记录" scheme="https://huanz.top/tags/%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="分享" scheme="https://huanz.top/tags/%E5%88%86%E4%BA%AB/"/>
     
     <category term="Hexo" scheme="https://huanz.top/tags/Hexo/"/>
     
@@ -179,9 +167,9 @@
     <category term="智能车" scheme="https://huanz.top/categories/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
     
     
-    <category term="分享" scheme="https://huanz.top/tags/%E5%88%86%E4%BA%AB/"/>
-    
     <category term="开源" scheme="https://huanz.top/tags/%E5%BC%80%E6%BA%90/"/>
+    
+    <category term="经验分享" scheme="https://huanz.top/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -204,8 +192,6 @@
     
     <category term="建站日志" scheme="https://huanz.top/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"/>
     
-    
-    <category term="记录" scheme="https://huanz.top/tags/%E8%AE%B0%E5%BD%95/"/>
     
     <category term="随笔" scheme="https://huanz.top/tags/%E9%9A%8F%E7%AC%94/"/>
     
@@ -230,7 +216,7 @@
     <category term="建站日志" scheme="https://huanz.top/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"/>
     
     
-    <category term="记录" scheme="https://huanz.top/tags/%E8%AE%B0%E5%BD%95/"/>
+    <category term="经验分享" scheme="https://huanz.top/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
@@ -239,7 +225,7 @@
     <link href="https://huanz.top/2021/hello/"/>
     <id>https://huanz.top/2021/hello/</id>
     <published>2021-05-15T02:50:43.000Z</published>
-    <updated>2021-05-15T10:51:41.000Z</updated>
+    <updated>2021-06-03T10:51:41.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Hello World!</p></blockquote><p> 第一次尝试发布文章。</p><span id="more"></span><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Holle World&quot;</span>);<span class="comment">// 代码测试 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2021/05/19/rXSOFDQhaucj98B.png" alt="logo.png" title="sm.ms | 图床测试"></p>]]></content>
     
@@ -251,10 +237,6 @@
     
     
     
-    <category term="建站日志" scheme="https://huanz.top/categories/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/"/>
-    
-    
-    <category term="记录" scheme="https://huanz.top/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
