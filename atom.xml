@@ -6,7 +6,7 @@
   <link href="https://huanz.top/atom.xml" rel="self"/>
   
   <link href="https://huanz.top/"/>
-  <updated>2021-06-03T02:32:27.000Z</updated>
+  <updated>2021-06-03T05:42:23.000Z</updated>
   <id>https://huanz.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C 语言学习笔记</title>
+    <link href="https://huanz.top/2021/c/"/>
+    <id>https://huanz.top/2021/c/</id>
+    <published>2021-06-03T05:42:23.000Z</published>
+    <updated>2021-06-03T05:42:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这学期开的 C 语言课，把最近 <a href="https://pintia.cn/">PTA</a> 上的一些题整理一下下。如果早一点有这个博客，也许这个页面会更全面一些吧。</p><div class="alert alert-info"><p>未完待续… ଘ(੭ˊᵕˋ)੭</p></div><span id="more"></span><h1 id="顺序结构"><a href="# 顺序结构" class="headerlink" title="顺序结构"></a>顺序结构 </h1><h1 id="选择结构"><a href="# 选择结构" class="headerlink" title="选择结构"></a> 选择结构 </h1><h1 id="循环结构"><a href="# 循环结构" class="headerlink" title="循环结构"></a> 循环结构 </h1><h1 id="数组"><a href="# 数组" class="headerlink" title="数组"></a> 数组 </h1><h1 id="函数"><a href="# 函数" class="headerlink" title="函数"></a> 函数 </h1><h2 id="判断一个素数"><a href="# 判断一个素数" class="headerlink" title="判断一个素数"></a> 判断一个素数</h2><blockquote><p>要点：一点要记得赋初值！！！</p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">is</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> i,a=<span class="number">0</span>; <span class="comment">// 赋初值！！！！！！！！！！！！！！</span></span><br><span class="line"><span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n<span class="number">-1</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">        <span class="keyword">if</span>(n%i==<span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            a++;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">if</span>(a!=<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="等等"><a href="# 等等" class="headerlink" title="等等"></a>等等</h2><blockquote><p>要点：</p></blockquote><h2 id="等等 -1"><a href="# 等等 -1" class="headerlink" title="等等"></a>等等</h2><blockquote><p>要点：</p></blockquote><h1 id="指针"><a href="# 指针" class="headerlink" title="指针"></a>指针</h1>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这学期开的C语言课，把最近&lt;a href=&quot;https://pintia.cn/&quot;&gt;PTA&lt;/a&gt;上的一些题整理一下下。如果早一点有这个博客，也许这个页面会更全面一些吧。&lt;/p&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;&lt;p&gt;未完待续… ଘ(੭ˊᵕˋ)੭&lt;/p&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="https://huanz.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="经验分享" scheme="https://huanz.top/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
+    
+    <category term="C语言" scheme="https://huanz.top/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>我的三体</title>
@@ -61,12 +86,10 @@
     
     
     
-    <category term="机械" scheme="https://huanz.top/categories/%E6%9C%BA%E6%A2%B0/"/>
+    <category term="学习笔记" scheme="https://huanz.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="随笔" scheme="https://huanz.top/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-    <category term="Solidworks" scheme="https://huanz.top/tags/Solidworks/"/>
     
     <category term="经验分享" scheme="https://huanz.top/tags/%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/"/>
     
