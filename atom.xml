@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Huanzの小窝</title>
   
-  <subtitle>记录·随笔·回忆·分享·教程·开源</subtitle>
+  <subtitle>随笔·回忆·分享·教程·开源</subtitle>
   <link href="https://huanz.top/atom.xml" rel="self"/>
   
   <link href="https://huanz.top/"/>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>C 语言学习笔记</title>
-    <link href="https://huanz.top/2021/c/"/>
-    <id>https://huanz.top/2021/c/</id>
+    <link href="https://huanz.top/2021/learn-cpp/"/>
+    <id>https://huanz.top/2021/learn-cpp/</id>
     <published>2021-06-03T05:42:23.000Z</published>
     <updated>2021-06-03T05:42:23.000Z</updated>
     
@@ -96,8 +96,8 @@
   
   <entry>
     <title>战略转移 Cloudflare</title>
-    <link href="https://huanz.top/2021/cloudflare/"/>
-    <id>https://huanz.top/2021/cloudflare/</id>
+    <link href="https://huanz.top/2021/move-to-cloudflare/"/>
+    <id>https://huanz.top/2021/move-to-cloudflare/</id>
     <published>2021-05-23T05:23:10.000Z</published>
     <updated>2021-05-27T05:23:10.000Z</updated>
     
@@ -122,8 +122,8 @@
   
   <entry>
     <title>开启站长统计</title>
-    <link href="https://huanz.top/2021/cnzz/"/>
-    <id>https://huanz.top/2021/cnzz/</id>
+    <link href="https://huanz.top/2021/site-statistics/"/>
+    <id>https://huanz.top/2021/site-statistics/</id>
     <published>2021-05-20T13:40:00.000Z</published>
     <updated>2021-06-01T10:51:41.000Z</updated>
     
@@ -197,8 +197,8 @@
   
   <entry>
     <title>在路上，忽然想到</title>
-    <link href="https://huanz.top/2021/occurrent/"/>
-    <id>https://huanz.top/2021/occurrent/</id>
+    <link href="https://huanz.top/2021/one-occurrent/"/>
+    <id>https://huanz.top/2021/one-occurrent/</id>
     <published>2021-05-17T14:22:45.000Z</published>
     <updated>2021-05-17T14:51:41.000Z</updated>
     
@@ -223,8 +223,8 @@
   
   <entry>
     <title>新域名，启动！</title>
-    <link href="https://huanz.top/2021/domain/"/>
-    <id>https://huanz.top/2021/domain/</id>
+    <link href="https://huanz.top/2021/my-domain/"/>
+    <id>https://huanz.top/2021/my-domain/</id>
     <published>2021-05-16T06:30:06.000Z</published>
     <updated>2021-05-16T10:51:41.000Z</updated>
     
@@ -244,8 +244,8 @@
   
   <entry>
     <title>Hello World!</title>
-    <link href="https://huanz.top/2021/hello/"/>
-    <id>https://huanz.top/2021/hello/</id>
+    <link href="https://huanz.top/2021/hello-world/"/>
+    <id>https://huanz.top/2021/hello-world/</id>
     <published>2021-05-15T02:50:43.000Z</published>
     <updated>2021-06-03T10:51:41.000Z</updated>
     
