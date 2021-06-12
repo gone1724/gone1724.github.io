@@ -186,7 +186,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1205
+                            1184
                         
                         字
                     </li>
@@ -229,7 +229,7 @@
 <h1 id="数组"><a href="# 数组" class="headerlink" title="数组"></a><strong>数组 </strong></h1><p> 数组最应注意初始化时别忘记定义数组个数，下面是一些不好记的库函数：</p>
 <ul>
 <li><strong>puts(str)</strong> 等于 printf(“%s”,ste)</li>
-<li><strong>gets(str)</strong> 约等于 scanf(“%s”,str) <ul>
+<li><strong>gets(str)</strong> 约等于 scanf(“%s”,str)<ul>
 <li>gets()以回车结束输入，会舍弃最后的回车符。</li>
 <li>scanf()以空白字符结束一次输入, 包括空格、回车等。</li>
 <li>scanf()遇到回车结束后，不会舍弃’\n’, 而是留在了输入缓冲区中。</li>
@@ -251,13 +251,15 @@
 
 <h2 id="等"><a href="# 等" class="headerlink" title="等"></a>等 </h2><p> 要点：</p>
 <h1 id="指针"><a href="# 指针" class="headerlink" title="指针"></a><strong>指针 </strong></h1><p> 指针相对于之前的知识还是有些难度的！</p>
-<h2 id="单选题"><a href="# 单选题" class="headerlink" title="单选题"></a>单选题</h2><ol>
-<li>设变量定义为 <code>int a[2]=&#123;1,3&#125;, *p=&amp;a[0]+1;</code>，则 *p 的值是 ()。<br><code> 答案为 3，*p=&amp;a[1]值为 3。</code></li>
+<h2 id="单选题"><a href="# 单选题" class="headerlink" title="单选题"></a>单选题</h2><ul>
+<li>设变量定义为 int a[2]={1,3}, <em>p=&amp;a[0]+1; ，则 </em>p 的值是()。<br><code> 答案为 3，*p=&amp;a[1]值为 3。</code></li>
 <li>若变量已正确定义并且指针 p 已经指向某个变量 x，则(<em>p)++ 相当于____。<br>A.p++    B.x++    C.</em>(p++)    D.&amp;x++<br><code>B：*p=x，(*p)++ 自然等于 x++。</code></li>
-<li>若有如下定义，则（ ）的值是 34。<br><code>int a[] = &#123;5, 15, 34, 54, 14, 2, 52, 72&#125;;</code><br><code>int *p = &amp;a[1];</code><br>A.p[1]    B.p[2]    C.p[0]    D.p[3]<br><code>p 指向 a[1]，p[1]的内容就是 a[2]了，也就是 34。</code><h2 id="函数题"><a href="# 函数题" class="headerlink" title="函数题"></a>函数题</h2></li>
+<li>若有如下定义，则（ ）的值是 34。int a[] = {5, 15, 34, 54, 14, 2, 52, 72};int *p = &amp;a[1];<br>A.p[1]    B.p[2]    C.p[0]    D.p[3]<br><code>p 指向 a[1]，p[1]的内容就是 a[2]了，也就是 34。</code></li>
+</ul>
+<h2 id="函数题"><a href="# 函数题" class="headerlink" title="函数题"></a>函数题</h2><ul>
 <li></li>
 <li></li>
-</ol>
+</ul>
 
             </div>
             
