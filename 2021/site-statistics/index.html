@@ -184,7 +184,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~1.53K
+                            ~1.54K
                         
                         字
                     </li>
@@ -213,12 +213,16 @@
 
 <h1 id="本主题 KRATOS-REBIRTH 是如何实现的？"><a href="# 本主题 KRATOS-REBIRTH 是如何实现的？" class="headerlink" title="本主题 KRATOS:REBIRTH 是如何实现的？"></a>本主题 <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">KRATOS:REBIRTH</a> 是如何实现的？</h1><p>本博客使用 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 搭建，几乎无需触碰底层代码，当仍可通过修改主题文件对网站实现自定义。我当前使用的主题 <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">KRATOS:REBIRTH</a> 默认支持在页尾添加统计代码。</p>
 <p>具体位置在 <code>themes\Kratos-Rebirth\_config.yml</code> 文件中 <code># Global 全局配置</code> 的<code>site_analytics:</code>。</p>
-<h1 id="我做了什么？"><a href="# 我做了什么？" class="headerlink" title="我做了什么？"></a>我做了什么？</h1><p>在 <code>themes\Kratos-Rebirth\_config.yml</code> 中添加一个自定义项如下。</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site<span class="emphasis">_analytics_</span>cnzz: 1279942268 #输入 www.CNZZ.com 的站长统计 id 号，默认在网页中隐藏</span><br></pre></td></tr></table></figure>
+<h1 id="我做了什么？"><a href="# 我做了什么？" class="headerlink" title="我做了什么？"></a>我做了什么？</h1><p>通过下面的操作，当我更换域名，只需修改在配置文件中统计代码 id 号即可。</p>
+<ol>
+<li>在 <code>themes\Kratos-Rebirth\_config.yml</code> 中添加一个自定义项如下。</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">site_analytics_cnzz:</span> <span class="number">1279942268</span> <span class="comment"># 输入 www.CNZZ.com 的站长统计 id 号，默认在网页中隐藏</span></span><br></pre></td></tr></table></figure>
 
-<p>在 <code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code> 文件中，在文本最后， <code>&lt;/body&gt;</code>之前，添加如下代码, 自定义项与前面对应。</p>
+<ol start="2">
+<li>在 <code>themes\Kratos-Rebirth\layout\_partial\head.ejs</code> 文件中，在文本最后， <code>&lt;/body&gt;</code>之前，添加如下代码, 自定义项与前面对应。</li>
+</ol>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.site_analytics_cnzz) &#123; %&gt;<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write(<span class="built_in">unescape</span>(<span class="string">&quot;%3Cspan style=&#x27;display:none;&#x27; id=&#x27;cnzz_stat_icon_&lt;%- theme.site_analytics_cnzz %&gt;&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D&lt;%- theme.site_analytics_cnzz %&gt;&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;</span>));</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
-<p>这样当我更换域名，只需修改在配置文件中统计代码 id 号即可。</p>
 
             </div>
             
