@@ -15,19 +15,19 @@
   
     <meta name="keywords" content="C语言, 经验分享" />
   
-  <meta name="description" content="这学期开了C语言课，马上也就要期末考试了，就把最近PTA上的一些题整理一下下发到这里，非计算机专业，学术不精。">
+  <meta name="description" content="这学期开了C语言课，马上也就要期末考试了，就把最近PTA和PPT里的一些题整理一下下发到这里，非计算机专业，学术不精。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C 语言备考笔记">
 <meta property="og:url" content="https://huanz.top/2021/learn-cpp/index.html">
 <meta property="og:site_name" content="Huanzの小窝">
-<meta property="og:description" content="这学期开了C语言课，马上也就要期末考试了，就把最近PTA上的一些题整理一下下发到这里，非计算机专业，学术不精。">
+<meta property="og:description" content="这学期开了C语言课，马上也就要期末考试了，就把最近PTA和PPT里的一些题整理一下下发到这里，非计算机专业，学术不精。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://huanz.top/images/logo.webp">
 <meta property="article:published_time" content="2021-06-03T05:42:23.000Z">
 <meta property="article:modified_time" content="2021-06-14T05:42:23.000Z">
 <meta property="article:author" content="Huanz">
-<meta property="article:tag" content="经验分享">
 <meta property="article:tag" content="C语言">
+<meta property="article:tag" content="经验分享">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://huanz.top/images/logo.webp">
 <meta name="twitter:site" content="@null">
@@ -184,7 +184,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~2.08K
+                            ~2.02K
                         
                         字
                     </li>
@@ -201,14 +201,22 @@
                     </div>
                 
                 <hr />
-                <p>这学期开了 C 语言课，马上也就要期末考试了，就把最近 <a target="_blank" rel="noopener" href="https://pintia.cn/">PTA</a> 上的一些题整理一下下发到这里，非计算机专业，学术不精。</p>
+                <p>这学期开了 C 语言课，马上也就要期末考试了，就把最近 <a target="_blank" rel="noopener" href="https://pintia.cn/">PTA</a> 和 PPT 里的一些题整理一下下发到这里，非计算机专业，学术不精。</p>
 <span id="more"></span>
 
-<h1 id="结构"><a href="# 结构" class="headerlink" title="结构"></a><strong>结构 </strong></h1><p> 三种程序结构是 C 语言的基础了：顺序结构、选择结构、循环结构。</p>
+<h1 id="结构"><a href="# 结构" class="headerlink" title="结构"></a><strong>结构 </strong></h1><p> 三种程序结构是 C 语言的基础了：顺序结构、选择结构(if 或 swich-default)、循环结构。</p>
 <ul>
-<li>若 x 为浮点型，则表达式 x=10/4 为（ ）。<br>A.2.5 B.2.0 C.2 D.3<br>答案是 A，区别于 10.0/5，先得结果为 2，再转换为浮点型是 2.0。</li>
-<li>在 C 语言中，数字 029 是一个（ ）。<br>A. 八进制数 B. 十进制数 C. 十六进制数 D. 非法数 <br> 答案是 D，八进制里没有 9。</li>
-<li>以下标识符中，不合法的是（ ）。<br>A.4d B._8_d C.Int D.key<br>答案是 A，标识符的第一位必须是字母或者下划线，不能是数字。</li>
+<li><p>若 x 为浮点型，则表达式 x=10/4 为（ ）。<br>A.2.5 B.2.0 C.2 D.3<br>答案是 A，区别于 10.0/5，先得结果为 2，再转换为浮点型是 2.0。</p>
+</li>
+<li><p>在 C 语言中，数字 029 是一个（ ）。<br>A. 八进制数 B. 十进制数 C. 十六进制数 D. 非法数 <br> 答案是 D，八进制里没有 9。</p>
+</li>
+<li><p>以下标识符中，不合法的是（ ）。<br>A.4d B._8_d C.Int D.key<br>答案是 A，标识符的第一位必须是字母或者下划线，不能是数字。</p>
+</li>
+<li><p>若有定义：double a＝22；int i＝0，k＝18；</p>
+<p>则不符合 C 语言规定的赋值语句是()</p>
+<p>A) i＝(a＋k)&lt;＝(i＋k)    B) i＝a%11    C)  i＝！a</p>
+<p>答案 B，浮点数不能整除运算。</p>
+</li>
 </ul>
 <h1 id="数组"><a href="# 数组" class="headerlink" title="数组"></a><strong>数组 </strong></h1><p> 数组最应注意初始化，别忘记定义数组个数。下面是一些不好记的库函数：</p>
 <ul>
@@ -225,11 +233,11 @@
 <li>scanf 在读取非空白符之前会忽略回车.</li>
 </ul>
 </li>
-<li><code>strcat(str1,str2)</code> 用连字符连接字符串</li>
-<li><code>strcpy(str1,str2)</code> 对 str1 作用，把 str2 复制到 str1</li>
-<li><code>strlen(str)</code> 测字符串长度函数</li>
-<li><code>strlwr(str)</code> 转化为小写函数</li>
-<li><code>strupr(str)</code> 转化为大写函数</li>
+<li>strcat(str1,str2)用连字符连接字符串</li>
+<li>strcpy(str1,str2) 对 str1 作用，把 str2 复制到 str1</li>
+<li>strlen(str) 测字符串长度函数</li>
+<li>strlwr(str) 转化为小写函数</li>
+<li>strupr(str) 转化为大写函数</li>
 </ul>
 <h1 id="函数"><a href="# 函数" class="headerlink" title="函数"></a><strong>函数</strong></h1><ul>
 <li>判断一个素数</li>
@@ -242,50 +250,15 @@
 <li>char *s=”C Language”; 表示 s 是一个指向字符串的指针变量，把字符串的首地址赋予 s。<br>T</li>
 </ul>
 <h2 id="单选题"><a href="# 单选题" class="headerlink" title="单选题"></a>单选题</h2><ul>
-<li><p>设变量定义为 int a[2]={1,3}, <em>p=&amp;a[0]+1; ，则</em>p 的值是()。<div class="xControl">
-    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>点击展开答案和解析</span></div>
-    <div class="xContent"><div class="inner">
-        <p>答案为 3</p>
-<p>*p=&amp;a[1]值为 3。</p>
- 
-    </div></div>
-    </div></p>
+<li><p>设变量定义为 int a[2]={1,3}, <em>p=&amp;a[0]+1; ，则 </em>p 的值是()。<br> 答案为 3，*p=&amp;a[1]值为 3。</p>
 </li>
-<li><p>若变量已正确定义并且指针 p 已经指向某个变量 x，则(<em>p)++ 相当于____。<br>A.p++    B.x++    C.</em>(p++)    D.&amp;x++<div class="xControl">
-    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>点击展开答案和解析</span></div>
-    <div class="xContent"><div class="inner">
-        <p>答案为 B</p>
-<p>*p=x，(*p)++ 自然等于 x++。</p>
- 
-    </div></div>
-    </div></p>
+<li><p>若变量已正确定义并且指针 p 已经指向某个变量 x，则 (<em>p)++ 相当于____。<br>A.p++    B.x++    C.</em>(p++)    D.&amp;x++<br> 答案为 B，*p=x，(*p)++ 自然等于 x++。</p>
 </li>
-<li><p>若有如下定义，则（ ）的值是 34。<br>int a[] = {5, 15, 34, 54, 14, 2, 52, 72};int *p = &amp;a[1];<br>A.p[1]    B.p[2]    C.p[0]    D.p[3]<div class="xControl">
-    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>点击展开答案和解析</span></div>
-    <div class="xContent"><div class="inner">
-        <p>p 指向 a[1]，p[1]的内容就是 a[2]了，也就是 34。</p>
- 
-    </div></div>
-    </div></p>
+<li><p>若有如下定义，则（ ）的值是 34。<br>int a[] = {5, 15, 34, 54, 14, 2, 52, 72};int *p = &amp;a[1];<br>A.p[1]    B.p[2]    C.p[0]    D.p[3]<br>p 指向 a[1]，p[1]的内容就是 a[2]了，也就是 34。</p>
 </li>
-<li><p>根据声明 int a[10], *p=a; ，下列表达式错误的是（ ）。<br>A.a[9]  B.p[5]  C.a++ D.*p++<div class="xControl">
-    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>点击展开答案和解析</span></div>
-    <div class="xContent"><div class="inner">
-        <p>答案为 C</p>
-<p>p[5]就是 *(p+5), 也就是 a[5]。</p>
- 
-    </div></div>
-    </div></p>
+<li><p>根据声明 int a[10], *p=a; ，下列表达式错误的是（ ）。<br>A.a[9]  B.p[5]  C.a++ D.*p++<br>答案为 C，p[5]就是 *(p+5), 也就是 a[5]。</p>
 </li>
-<li><p>若定义 pf 为指向 float 类型变量 f 的指针，下列语句中__是正确的。<br>A.float f, *pf = f; B.float f, *pf = &f;<br>C.float *pf = &amp;f, f;  D.float f, *pf =0.0;<div class="xControl">
-    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>点击展开答案和解析</span></div>
-    <div class="xContent"><div class="inner">
-        <p>答案为 B</p>
-<p>float f, <em>pf = f; 含义同赋值语句</em>pf = f 不同，而是相当于 float f, *pf;pf = f;pf 被初始化指向地址值为 f 的指针，而地址值不可能是 float 的，这不合语法，所以出错。</p>
-<p>定义时初始化 float *pf = &f; 等价的语句是:float *pf;pf = &f; 是正确的。</p>
- 
-    </div></div>
-    </div></p>
+<li><p>若定义 pf 为指向 float 类型变量 f 的指针，下列语句中__是正确的。<br>A.float f, *pf = f; B.float f, *pf = &f;<br>C.float *pf = &amp;f, f;  D.float f, *pf =0.0;<br>答案为 B。float f, <em>pf = f; 含义同赋值语句</em>pf = f 不同，而是相当于 float f, *pf;pf = f;pf 被初始化指向地址值为 f 的指针，而地址值不可能是 float 的，这不合语法，所以出错。定义时初始化 float *pf = &f; 等价的语句是:float *pf;pf = &f; 是正确的。</p>
 </li>
 </ul>
 <h1 id="后记"><a href="# 后记" class="headerlink" title="后记"></a><strong>后记 </strong></h1><p> 写个东西，排版有点费事，有这时间还不如滚去复习去~ </p>
