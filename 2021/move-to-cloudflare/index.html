@@ -215,7 +215,7 @@
 <ul>
 <li> CDN 解决最后一公里的资源分发，但无法完美解决问题，尤其对小流量的个人博客。</li>
 <li> Coding Pages 做镜像站，但访问时会先出现跳转页面，导致百度爬虫无法正常收录。</li>
-<li> 使用 <a href="zeit.co"> zeit.co </a> 提供的静态资源 hosting 服务，本质上他们提供了 Storage+CDN+DNS 这一套完整服务。</li>
+<li> 使用 <a target="_blank" rel="noopener" href="https://zeit.co/"> zeit.co </a> 提供的静态资源 hosting 服务，本质上他们提供了 Storage+CDN+DNS 这一套完整服务。</li>
 </ul>
 <h1 id="解决问题"><a href="# 解决问题" class="headerlink" title="解决问题"></a>解决问题 </h1><p> 受文章 <a target="_blank" rel="noopener" href="https://zpjiang.me/2020/01/15/let-baidu-index-github-page/"> 解决百度爬虫无法爬取 Github Pages 个人博客的问题 </a> 的启发，我想 <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a> 是不是也能解决相同的问题呢。</p>
 <p>于是在网上继续搜索，找到以下博文：</p>
@@ -233,7 +233,7 @@
 <p>下面我们只需在 <a target="_blank" rel="noopener" href="https://pages.cloudflare.com/">Pages</a> 注册好账号，点击那个大大的黄色的 Get Started 按钮，按照指引授权 GitHub 权限，选择构建使用的仓库(就是 GitHub Pages 的仓库地址)。设置构建的命令，我不太懂，也没有改动，最终就部署完成了。</p>
 <p>【 <strong>部署完成</strong> 】&gt;&gt; <a target="_blank" rel="noopener" href="https://gone1724-github-io.pages.dev/">https://gone1724-github-io.pages.dev</a></p>
 <p>我实测从上传 Github 完成，到 Cloudflare 部署完成用时在 50s 左右，并且站点 IP 支持 IPV6！</p>
-<h1 id="域名解析"><a href="# 域名解析" class="headerlink" title="域名解析"></a>域名解析 </h1><p> 我的域名 <a href="https://huanz.top/">huanz.top</a> 之前托管在<a href="dnspod.cn">DNSPod</a>。由于 Cloudflare 也提供了 DNS 解析服务，就顺便也试用了一下它的免费的解析套餐。</p>
+<h1 id="域名解析"><a href="# 域名解析" class="headerlink" title="域名解析"></a>域名解析 </h1><p> 我的域名 <a href="https://huanz.top/">huanz.top</a> 之前托管在<a target="_blank" rel="noopener" href="https://dnspod.cn/">DNSPod</a>。由于 Cloudflare 也提供了 DNS 解析服务，就顺便也试用了一下它的免费的解析套餐。</p>
 <p>最近发现如果使用自己的域名，就必须使用 Cloudflare 提供的 DNS 解析服务欸，可恶。</p>
 <h1 id="部署原理"><a href="# 部署原理" class="headerlink" title="部署原理"></a>部署原理 </h1><p> 以下是我的理解：</p>
 <ul>
